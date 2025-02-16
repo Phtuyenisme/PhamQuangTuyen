@@ -1,5 +1,9 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
 
+require(game.ReplicatedStorage:WaitForChild("Notification")).new(
+            " <Color=Green>Yamate kudsai tokuda shizuka nobita <Color=/> "
+        ):Display()
+
        local Window = MakeWindow({
          Hub = {
          Title = "PhTuyen_Cuto",
@@ -132,6 +136,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/
     AddButton(Tab3o, {
      Name = "Fix Lag",
     Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+
+    AddButton(Tab3o, {
+     Name = "Fix LagV2",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
   end
   })
 
