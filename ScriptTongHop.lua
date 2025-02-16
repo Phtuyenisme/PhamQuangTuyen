@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "https://create.roblox.com/store/asset/92532554311671/Meomeo?assetType=Decal&externalSource=www",
+       Image = "http://www.roblox.com/asset/?id=89923135895849",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
