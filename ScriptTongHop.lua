@@ -1,5 +1,5 @@
 require(game.ReplicatedStorage:WaitForChild("Notification")).new(
-            " <Color=Green>~Yameteee~ <Color=/> "
+            " <Color=Yellow>Lưu ý! Một vài Script sẽ không chạy,Lỗi.Lười chưa xoá! <Color=/> "
         ):Display()
 require(game.ReplicatedStorage:WaitForChild("Notification")).new(
             " <Color=Green>SigmaBoy <Color=/> "
@@ -84,7 +84,7 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
 
     AddButton(Tab1o, {
      Name = "MinGaming Hub",
-    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinBV"))()
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinCE"))()
   end
   })
 
@@ -119,6 +119,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
     AddButton(Tab1o, {
      Name = "Mukuro Hub",
     Callback = function()	loadstring(game:HttpGet("https://auth.quartyz.com/scripts/Loader.lua"))()
+  end
+  })
+
+    AddButton(Tab1o, {
+     Name = "Auto Fruit",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/FruitFinder.lua"))()
+  end
+  })
+
+    AddButton(Tab1o, {
+     Name = "TeddyHub Auto Hop",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-AutoHopv1"))()
+  end
+  })
+
+    AddButton(Tab1o, {
+     Name = "Trẩu Hub",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
   end
   })
 
