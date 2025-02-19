@@ -46,6 +46,12 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   end
   })
+
+    AddButton(Tab1o, {
+     Name = "Cuttay Hub[FREE]",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhub-mizu.lua"))()
+  end
+  })
     
     AddButton(Tab1o, {
      Name = "AstralV1 Hub",
