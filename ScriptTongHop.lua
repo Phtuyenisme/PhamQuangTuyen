@@ -130,7 +130,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
 
     AddButton(Tab1o, {
      Name = "TeddyHub Auto Hop",
-    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-AutoHopv1"))()
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHop-FREE"))()
   end
   })
 
