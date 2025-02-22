@@ -1,29 +1,3 @@
-local cjson = require "cjson"  -- Yêu cầu thư viện cjson
-
--- Hàm lưu tùy chọn dưới dạng JSON
-function saveUserOptionsJSON(options)
-    local file = io.open("/var/mobile/Containers/Data/Application/C43FBFC7-C94B-4407-8876-1D6B8E55AFD3/Documents/Delta/Workspace/Phtuyen.json", "w")
-    if file then
-        file:write(cjson.encode(options))  -- Sử dụng cjson để mã hóa bảng thành chuỗi JSON
-        file:close()
-    else
-        print("Không thể mở tệp để lưu tùy chọn.")
-    end
-end
--- Hàm đọc tùy chọn từ tệp JSON
-function loadUserOptionsJSON()
-    local options = {}
-    local file = io.open("/var/mobile/Containers/Data/Application/C43FBFC7-C94B-4407-8876-1D6B8E55AFD3/Documents/Delta/Workspace/Phtuyen.json", "r")
-    if file then
-        local data = file:read("*a")  -- Đọc toàn bộ nội dung tệp
-        options = cjson.decode(data)  -- Sử dụng cjson để giải mã chuỗi JSON thành bảng
-        file:close()
-    else
-        print("Không thể mở tệp để đọc tùy chọn.")
-    end
-    return options
-end
-
 require(game.ReplicatedStorage:WaitForChild("Notification")).new(
             " <Color=Yellow>Lưu ý! Một vài Script sẽ không chạy,Lỗi.Lười chưa xoá! <Color=/> "
         ):Display()
@@ -213,5 +187,32 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/
     Callback = function()	loadstring(Game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
   end
   })
+
+-- Hàm đọc tùy chọn từ tệp JSON
+function loadUserOptionsJSON()
+    local options = {}
+    local file = io.open("/var/mobile/Containers/Data/Application/C43FBFC7-C94B-4407-8876-1D6B8E55AFD3/Documents/Delta/Workspace/Phtuyen.json", "r")
+    if file then
+        local data = file:read("*a")  -- Đọc toàn bộ nội dung tệp
+        options = cjson.decode(data)  -- Sử dụng cjson để giải mã chuỗi JSON thành bảng
+        file:close()
+    else
+        print("Không thể mở tệp để đọc tùy chọn.")
+    end
+    return options
+end
+
+local cjson = require "cjson"  -- Yêu cầu thư viện cjson
+
+-- Hàm lưu tùy chọn dưới dạng JSON
+function saveUserOptionsJSON(options)
+    local file = io.open("/var/mobile/Containers/Data/Application/C43FBFC7-C94B-4407-8876-1D6B8E55AFD3/Documents/Delta/Workspace/Phtuyen.json", "w")
+    if file then
+        file:write(cjson.encode(options))  -- Sử dụng cjson để mã hóa bảng thành chuỗi JSON
+        file:close()
+    else
+        print("Không thể mở tệp để lưu tùy chọn.")
+    end
+end
 ---Succac
 ---YeuuTuongVyy
