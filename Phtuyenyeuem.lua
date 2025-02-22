@@ -137,7 +137,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
 
     AddButton(Tab1o, {
      Name = "Auto Fruit",
-    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/FruitFinder.lua"))()
+    Callback = function()	_G.FruitFinder = true;
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
   end
   })
 
