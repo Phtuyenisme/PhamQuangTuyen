@@ -136,6 +136,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
   })
 
     AddButton(Tab1o, {
+     Name = "Auto DoughKingV2",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughKing-Kill-Teddy"))()
+  end
+  })
+
+    AddButton(Tab1o, {
      Name = "Auto Fruit",
     Callback = function()	_G.FruitFinder = true;
 loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
