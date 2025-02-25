@@ -127,14 +127,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
   })
 
     AddButton(Tab1o, {
-     Name = "TeddyHub Auto Hop",
-    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHop-FREE"))()
+     Name = "Auto Hop Mirage",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/mirage-island"))()
   end
   })
 
     AddButton(Tab1o, {
-     Name = "Auto DoughKingV2",
-    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughKing-Kill-Teddy"))()
+     Name = "Auto Hop Rip, KataV2, Darkbeard",
+    Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
   end
   })
 
