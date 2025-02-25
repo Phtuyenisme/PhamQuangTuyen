@@ -47,11 +47,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     AddButton(Tab1o, {
      Name = "W-azure Hub",
     Callback = function()	getgenv().Team = "Pirates"
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+getgenv().AutoLoad = false --Will Load Script On Server Hop
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-  end
-  })
 
     AddButton(Tab1o, {
      Name = "Redz Hub",
