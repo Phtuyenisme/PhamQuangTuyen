@@ -161,10 +161,9 @@ end
 })
 
 Tab4:AddButton({
-	Name = "Master Hub",
+	Name = "Zis Roblox",
 	Callback = function()
-         repeat wait(5) until game:IsLoaded()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/obfmoonsec/Masterhub/refs/heads/main/obf"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
 end
 })
 
