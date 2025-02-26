@@ -58,36 +58,6 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "Mukuro Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://auth.quartyz.com/scripts/Loader.lua"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Alchemy Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/AlchemyHub/main/Main.lua"))({ "discord.gg/alchemyhub","x2neptune.tech/LoaderPromo",true,"BY:x2Neptune" })
-  	end    
-})
-Tab:AddButton({
-	Name = "Raito Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Speed Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua
-  	end    
-})
-Tab:AddButton({
-	Name = "Teddy Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
-  	end    
-})
-Tab:AddButton({
 	Name = "Xero Hub",
 	Callback = function()
      getgenv().Team = "Pirates"
@@ -106,12 +76,6 @@ Tab:AddButton({
 	Name = "QuanTum Hub",
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Volcano Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
   	end    
 })
 Tab:AddButton({
