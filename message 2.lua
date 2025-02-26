@@ -1,21 +1,21 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinh12eqweaws/vvvs/refs/heads/main/caz"))()
 local Window = redzlib:MakeWindow({
-  Title = "bt me gi dau",
-  SubTitle = "???",
+  Title = "Script Tổng Hợp[NEW]",
+  SubTitle = Phtuyen_zZ",
 })
 
 local AFKOptions = {}
 
 local Discord = Window:MakeTab({"Youtube", "video"})
 Discord:AddDiscordInvite({
-  Name = "////",
+  Name = "Phtuyenisme",
   Description = "cc dumamay",
   Logo = "rbxassetid://id ảnh",
   Invite = ""
 })
 local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
-  Name = "Duc Design",
+  Name = "Quang Tuyên",
   Description = "cc dumamay",
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/"
