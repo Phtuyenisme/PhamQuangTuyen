@@ -43,3 +43,14 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
   	end    
 })
+local Tab1 = Window:MakeTab({"tên tab",
+	Icon = "rbxassetid://10734941499",
+	PremiumOnly = false
+})
+local Tab2 = Window:MakeTab({"tên tab",
+	Icon = "rbxassetid://10734941499",
+	PremiumOnly = false
+})local Tab3 = Window:MakeTab({"tên tab",
+	Icon = "rbxassetid://10734941499",
+	PremiumOnly = false
+})
