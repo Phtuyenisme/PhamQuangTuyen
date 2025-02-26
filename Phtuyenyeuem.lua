@@ -17,7 +17,7 @@ local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
   Name = "Quang Tuyên",
   Description = "SIGMA_BOY",
-  Logo = "http://www.roblox.com/asset/?id=",
+  Logo = "http://www.roblox.com/asset/?id=89923135895849",
   Invite = "https://www.facebook.com/"
   })
 local Tab = Window:MakeTab({"Fix Lag",
