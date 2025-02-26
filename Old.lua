@@ -65,18 +65,16 @@ local Tab3 = Window:MakeTab({"Troll",
 })
 
 Tab3:AddButton({
-	Name = "Fix Lag",
+	Name = "Fake Ban",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy2511-coder/FakeBan/refs/heads/main/fakeban"))()
 end
 })
 
 Tab3:AddButton({
-	Name = "Anti Kick",
+	Name = "Troll Kick",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-     loadstring(game:HttpGet("https://pastebin.com/raw/FPfaukXN"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubTrollKick/refs/heads/main/VxezeHubTrollKick.txt"))()
 end
 })
 local Tab4 = Window:MakeTab({"Tên tab",
@@ -117,18 +115,16 @@ end
 })
 
 Tab3:AddButton({
-	Name = "RTX",
+	Name = "Reset Fruit",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        loadstring(game:HttpGet("https://pastebin.com/raw/vmjZ4UY8"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/Kaitun.txt"))()
 end
 })
 
 Tab3:AddButton({
-	Name = "Lụm Quả",
+	Name = "Trade Scam",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        -- dán script vô
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/heads/main/kk",true))()
 end
 })
 Tab4:AddButton({
