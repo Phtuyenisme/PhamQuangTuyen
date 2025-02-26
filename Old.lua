@@ -39,59 +39,6 @@ Tab:AddButton({
        loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   	end    
 })
-Tab:AddButton({
-	Name = "Min Gaming",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinME"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Trẩu Roblox",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Zis Roblox",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Xero Hub",
-	Callback = function()
-     getgenv().Team = "Pirates"
-getgenv().Hide_Menu = false
-getgenv().Auto_Execute = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "AstralV1",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "QuanTum Hub",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "Rubu Tv",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "BlueX",
-	Callback = function()
-     _G.Team = "Pirates" 
-_G.FixLag = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
-  	end    
-})
 
 local Tab2 = Window:MakeTab({ "tên tab",
 	Name = "Mod Client",
