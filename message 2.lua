@@ -47,6 +47,13 @@ local Tab1 = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
+
+Tab1:AddButton({
+	Name = "NEW: Yumiara",
+	Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
+  	end    
+})
 local Tab2 = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
