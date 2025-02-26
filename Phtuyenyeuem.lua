@@ -18,7 +18,7 @@ Discord:AddDiscordInvite({
   Name = "Quang Tuyên",
   Description = "SIGMA_BOY",
   Logo = "http://www.roblox.com/asset/?id=89923135895849",
-  Invite = "https://www.facebook.com/"
+  Invite = "https://www.facebook.com/ph.tuyenn0"
   })
 local Tab = Window:MakeTab({"Fix Lag",
 	Icon = "rbxassetid://10734941499",
