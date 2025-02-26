@@ -20,6 +20,10 @@ Discord:AddDiscordInvite({
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/"
   })
+local Tab = Window:MakeTab({"tên tab",
+	Icon = "rbxassetid://10734941499",
+	PremiumOnly = false
+})
 
 local Tab = Window:MakeTab({"Script Farm",
 	Icon = "rbxassetid://10734941499",
