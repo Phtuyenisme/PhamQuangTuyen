@@ -44,7 +44,7 @@ Tab:AddButton({
   	end    
 })
 
-local Tab2 = Window:MakeTab({ "Auto",
+local Tab2 = Window:MakeTab({ "PvP",
 	Name = "Mod Client",
 	Icon = "rbxassetid://10723417131",
 	PremiumOnly = false
@@ -83,7 +83,7 @@ Tab2:AddButton({
 end
 })
 
-local Tab3 = Window:MakeTab({"Auto",
+local Tab3 = Window:MakeTab({"Troll",
 	Icon = "rbxassetid://10723425376",
 	PremiumOnly = false
 })
