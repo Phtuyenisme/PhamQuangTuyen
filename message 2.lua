@@ -18,7 +18,7 @@ Discord:AddDiscordInvite({
   Name = "Quang Tuyên",
   Description = "cc dumamay",
   Logo = "rbxassetid://id ảnh",
-  Invite = "https://www.facebook.com/"
+  Invite = "https://www.facebook.com/ph.tuyenn0"
   })
 local Tab = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10734941499",
