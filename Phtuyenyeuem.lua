@@ -21,7 +21,7 @@ Discord:AddDiscordInvite({
   Invite = "https://www.facebook.com/ph.tuyenn0"
   })
 local Tab = Window:MakeTab({"Fix Lag",
-	Icon = "rbxassetid://10734941499",
+	Icon = "rbxassetid://10709774068",
 	PremiumOnly = false
 })
 
