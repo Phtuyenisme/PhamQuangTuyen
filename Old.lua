@@ -40,9 +40,92 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "NEW: Volcano",
+	Name = "Min Gaming",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinME"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Trẩu Roblox",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Zis Roblox",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Mukuro Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://auth.quartyz.com/scripts/Loader.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Alchemy Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/AlchemyHub/main/Main.lua"))({ "discord.gg/alchemyhub","x2neptune.tech/LoaderPromo",true,"BY:x2Neptune" })
+  	end    
+})
+Tab:AddButton({
+	Name = "Raito Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Speed Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua
+  	end    
+})
+Tab:AddButton({
+	Name = "Teddy Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Xero Hub",
+	Callback = function()
+     getgenv().Team = "Pirates"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "AstralV1",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "QuanTum Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Volcano Hub",
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Rubu Tv",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "BlueX",
+	Callback = function()
+     _G.Team = "Pirates" 
+_G.FixLag = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
   	end    
 })
 
