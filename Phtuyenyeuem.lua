@@ -9,9 +9,9 @@ local AFKOptions = {}
 local Discord = Window:MakeTab({"TikTok", "video"})
 Discord:AddDiscordInvite({
   Name = "phamTuyen",
-  Description = "cc dumamay",
+  Description = "Phtuyen_yeuem",
   Logo = "rbxassetid://id ảnh",
-  Invite = ""
+  Invite = "https://www.tiktok.com/@.pham.tuyen?_t=ZS-8uFDxCkfL9j&_r=1"
 })
 local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
