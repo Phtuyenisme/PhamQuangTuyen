@@ -20,12 +20,12 @@ Discord:AddDiscordInvite({
   Logo = "rbxassetid://92532554311671",
   Invite = "https://www.facebook.com/ph.tuyenn0"
   })
-local Tab2 = Window:MakeTab({"Script Auto",
+local Tab = Window:MakeTab({"Script Auto",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
 
-Tab2:AddButton({
+Tab:AddButton({
 	Name = "Gangteng",
 	Callback = function()
        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
@@ -44,8 +44,6 @@ Tab1:AddButton({
   	end    
 })
 
-
-
 Tab1:AddButton({
 	Name = "Trẩu Roblox",
 	Callback = function()
@@ -54,7 +52,6 @@ Tab1:AddButton({
 end
 })
 
-
 Tab1:AddButton({
 	Name = "Cụt Tay Hub",
 	Callback = function()
@@ -62,7 +59,6 @@ Tab1:AddButton({
          loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/main/Cuttayhubreal.lua'))()
 end
 })
-
 
 Tab1:AddButton({
 	Name = "Xero Hub",
