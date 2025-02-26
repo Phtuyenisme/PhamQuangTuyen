@@ -40,7 +40,7 @@ Tab:AddButton({
 
 local Tab2 = Window:MakeTab({ "PvP",
 	Name = "Mod Client",
-	Icon = "rbxassetid://10723417131",
+	Icon = "rbxassetid://10723395215",
 	PremiumOnly = false
 })
 
