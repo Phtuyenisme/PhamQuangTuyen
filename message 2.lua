@@ -52,14 +52,6 @@ local Tab2 = Window:MakeTab({ "Mod Client",
 
 
 Tab2:AddButton({
-	Name = "Fruit Finder",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/AdminusGames/Blox_Fruits_Sniper/main/.lua'))()
-  	end    
-})
-
-Tab2:AddButton({
 	Name = "Arceus X",
 	Callback = function()
         repeat wait(5) until game:IsLoaded()
