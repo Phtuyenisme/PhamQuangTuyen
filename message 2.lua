@@ -20,27 +20,107 @@ Discord:AddDiscordInvite({
   Logo = "http://www.roblox.com/asset/?id=112969263935543",
   Invite = "https://www.facebook.com/"
   })
-local Tab = Window:MakeTab({"tên tab",
+local Tab = Window:MakeTab({"Script Farm",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "NEW: Yumiara",
+	Name = "W-azure Hub",
 	Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
   	end    
 })
 Tab:AddButton({
-	Name = "NEW: Gangteng",
+	Name = "Redz Hub",
 	Callback = function()
        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
   	end    
 })
 Tab:AddButton({
-	Name = "NEW: Volcano",
+	Name = "Min Gaming",
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Trẩu Roblox",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Zis Roblox",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Mukuro Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Alchemy Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Raito Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Speed Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Teddy Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Xero Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "AstralV1",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "QuanTum Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Volcano Hub",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Rubu Tv",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "BlueX",
+	Callback = function()
+     _G.Team = "Pirates" 
+_G.FixLag = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
   	end    
 })
 local Tab9 = Window:MakeTab({"tên tab",
