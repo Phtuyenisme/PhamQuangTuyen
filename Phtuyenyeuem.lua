@@ -10,13 +10,13 @@ local Discord = Window:MakeTab({"TikTok", "video"})
 Discord:AddDiscordInvite({
   Name = "phamTuyen",
   Description = "Phtuyen_yeuem",
-  Logo = "rbxassetid://id ảnh",
+  Logo = "http://www.roblox.com/asset/?id=112969263935543",
   Invite = "https://www.tiktok.com/@.pham.tuyen?_t=ZS-8uFDxCkfL9j&_r=1"
 })
 local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
-  Name = "Duc Design",
-  Description = "cc dumamay",
+  Name = "Quang Tuyên",
+  Description = "SIGMA_BOY",
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/"
   })
