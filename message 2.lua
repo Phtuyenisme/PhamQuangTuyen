@@ -44,13 +44,6 @@ Tab:AddButton({
   	end    
 })
 
-local Tab2 = Window:MakeTab({ "Mod Client",
-	Name = "Mod Client",
-	Icon = "rbxassetid://10723417131",
-	PremiumOnly = false
-})
-
-
 local Tab3 = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10723425376",
 	PremiumOnly = false
