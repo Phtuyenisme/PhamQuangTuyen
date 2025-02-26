@@ -9,14 +9,14 @@ local AFKOptions = {}
 local Discord = Window:MakeTab({"Youtube", "video"})
 Discord:AddDiscordInvite({
   Name = "Phtuyenisme",
-  Description = "cc dumamay",
+  Description = "SIGMA_BOY",
   Logo = "rbxassetid://id ảnh",
   Invite = ""
 })
 local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
   Name = "Quang Tuyên",
-  Description = "cc dumamay",
+  Description = "phtuyen_yeuem",
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/ph.tuyenn0"
   })
