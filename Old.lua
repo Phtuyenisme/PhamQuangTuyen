@@ -26,21 +26,15 @@ local Tab = Window:MakeTab({"Fix Lag",
 })
 
 Tab:AddButton({
-	Name = "NEW: Yumiara",
+	Name = "fix lag V1",
 	Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
   	end    
 })
 Tab:AddButton({
-	Name = "NEW: Gangteng",
+	Name = "Fix lag V2",
 	Callback = function()
-       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
-  	end    
-})
-Tab:AddButton({
-	Name = "NEW: Volcano",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
   	end    
 })
 
