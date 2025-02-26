@@ -6,11 +6,7 @@ local Window = redzlib:MakeWindow({
 
        MinimizeButton({
        Image = "rbxassetid://89923135895849",
-       Size = {60, 60},
-       Color = Color3.fromRGB(10, 10, 10),
-       Corner = true,
-       Stroke = false,
-       StrokeColor = Color3.fromRGB(255, 0, 0)
+       Size = {10, 10}
       })
 
 local AFKOptions = {}
