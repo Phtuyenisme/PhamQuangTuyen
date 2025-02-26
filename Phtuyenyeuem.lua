@@ -1,14 +1,14 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinh12eqweaws/vvvs/refs/heads/main/caz"))()
 local Window = redzlib:MakeWindow({
-  Title = "bt me gi dau",
-  SubTitle = "???",
+  Title = "Script Tổng Hợp V2",
+  SubTitle = "Phtuyenn",
 })
 
 local AFKOptions = {}
 
-local Discord = Window:MakeTab({"Youtube", "video"})
+local Discord = Window:MakeTab({"TikTok", "video"})
 Discord:AddDiscordInvite({
-  Name = "////",
+  Name = "phamTuyen",
   Description = "cc dumamay",
   Logo = "rbxassetid://id ảnh",
   Invite = ""
