@@ -82,7 +82,7 @@ local Tab4 = Window:MakeTab({"Script Farm",
 	PremiumOnly = false
 })
 local Tab5 = Window:MakeTab({ "Auto",
-	Icon = "rbxassetid://10723424838",
+	Icon = "rbxassetid://10709751939",
 	PremiumOnly = false
 })
 Tab5:AddButton({
