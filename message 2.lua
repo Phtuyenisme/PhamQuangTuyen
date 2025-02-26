@@ -10,7 +10,7 @@ local Discord = Window:MakeTab({"Tiktok", "video"})
 Discord:AddDiscordInvite({
   Name = "Phtuyen",
   Description = "SIGMA_BOY",
-  Logo = "rbxassetid://id ảnh",
+  Logo = "rbxassetid://110276830369206",
   Invite = ""
 })
 local Discord = Window:MakeTab({"Facebook", "play"})
