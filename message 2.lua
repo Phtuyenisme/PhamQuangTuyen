@@ -68,54 +68,7 @@ local Tab4 = Window:MakeTab({"Tên tab",
 	Icon = "rbxassetid://10734906975",
 	PremiumOnly = false
 })
-local Tab5 = Window:MakeTab({ "Tên tab",
-	Icon = "rbxassetid://10723424838",
-	PremiumOnly = false
-})
-Tab5:AddButton({
-	Name = "Farm Nhanh",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
-end
-})
-Tab5:AddButton({
-	Name = "Auto Bounty",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        -- dán script vô
-end
-})
-Tab5:AddButton({
-	Name = "Keyboard",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-     --dán script vô
-end
-})
 
-Tab5:AddButton({
-	Name = "Chests Farm",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
-end    
-})
-
-Tab3:AddButton({
-	Name = "RTX",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        loadstring(game:HttpGet("https://pastebin.com/raw/vmjZ4UY8"))()
-end
-})
-
-Tab3:AddButton({
-	Name = "Lụm Quả",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        -- dán script vô
-end
-})
 Tab4:AddButton({
 	Name = "Royx Hub",
 	Callback = function()
