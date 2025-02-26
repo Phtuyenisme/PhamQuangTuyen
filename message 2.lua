@@ -54,10 +54,3 @@ Tab2:AddButton({
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
   	end    
 })
-local Tab2 = Window:MakeTab({"tên tab",
-	Icon = "rbxassetid://10734941499",
-	PremiumOnly = false
-})local Tab3 = Window:MakeTab({"tên tab",
-	Icon = "rbxassetid://10734941499",
-	PremiumOnly = false
-})
