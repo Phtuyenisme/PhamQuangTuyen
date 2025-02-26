@@ -253,30 +253,30 @@ Tab4:AddButton({
 })
 
 Tab4:AddButton({
-	Name = "Zen Hub",
+	Name = "Update...",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
+       -- dán script vô
   	end    
 })
 
 Tab4:AddButton({
-	Name = "Uranium/Switch Hub",
+	Name = "Update...",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumX/main/src_.lua.txt"))()
+       -- dán script vô
   	end    
 })
 
 
 Tab4:AddButton({
-	Name = "Thunder Z",
+	Name = "Update...",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Mobile-Loader"))()
+       -- dán script vô
   	end    
 })
 
 Tab4:AddButton({
-	Name = "Mukuro Hub",
+	Name = "Update...",
 	Callback = function()
-        loaloadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
+       -- dán script vô
   	end    
 })
