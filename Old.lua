@@ -20,7 +20,7 @@ Discord:AddDiscordInvite({
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/"
   })
-local Tab = Window:MakeTab({"tên tab",
+local Tab = Window:MakeTab({"Fix Lag",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
@@ -44,7 +44,7 @@ Tab:AddButton({
   	end    
 })
 
-local Tab2 = Window:MakeTab({ "tên tab",
+local Tab2 = Window:MakeTab({ "Auto",
 	Name = "Mod Client",
 	Icon = "rbxassetid://10723417131",
 	PremiumOnly = false
@@ -83,7 +83,7 @@ Tab2:AddButton({
 end
 })
 
-local Tab3 = Window:MakeTab({"tên tab",
+local Tab3 = Window:MakeTab({"Auto",
 	Icon = "rbxassetid://10723425376",
 	PremiumOnly = false
 })
@@ -107,7 +107,7 @@ local Tab4 = Window:MakeTab({"Tên tab",
 	Icon = "rbxassetid://10734906975",
 	PremiumOnly = false
 })
-local Tab5 = Window:MakeTab({ "Tên tab",
+local Tab5 = Window:MakeTab({ "Auto",
 	Icon = "rbxassetid://10723424838",
 	PremiumOnly = false
 })
