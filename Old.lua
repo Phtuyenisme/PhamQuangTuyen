@@ -77,7 +77,7 @@ Tab3:AddButton({
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubTrollKick/refs/heads/main/VxezeHubTrollKick.txt"))()
 end
 })
-local Tab4 = Window:MakeTab({"Tên tab",
+local Tab4 = Window:MakeTab({"Script Farm",
 	Icon = "rbxassetid://10734906975",
 	PremiumOnly = false
 })
