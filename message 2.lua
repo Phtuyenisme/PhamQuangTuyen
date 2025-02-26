@@ -54,7 +54,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Zis Roblox",
 	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
   	end    
 })
 Tab:AddButton({
