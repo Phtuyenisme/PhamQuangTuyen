@@ -140,7 +140,7 @@ Tab2:AddButton({
   	end    
 })
 local Tab3 = Window:MakeTab({"Script Auto",
-	Icon = "rbxassetid://10734941499",
+	Icon = "rbxassetid://10709751939",
 	PremiumOnly = false
 })
 
@@ -148,6 +148,13 @@ Tab3:AddButton({
 	Name = "Auto Mirage Island",
 	Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/mirage-island"))()
+  	end    
+})
+
+Tab3:AddButton({
+	Name = "Cuttay Hub",
+	Callback = function()
+       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a1498369f289af2671cca90085f23fb8.lua"))()
   	end    
 })
 
