@@ -17,7 +17,7 @@ local Discord = Window:MakeTab({"Facebook", "play"})
 Discord:AddDiscordInvite({
   Name = "Quang Tuyên",
   Description = "phtuyen_yeuem",
-  Logo = "rbxassetid://id ảnh",
+  Logo = "rbxassetid://92532554311671",
   Invite = "https://www.facebook.com/ph.tuyenn0"
   })
 local Tab = Window:MakeTab({"Script",
