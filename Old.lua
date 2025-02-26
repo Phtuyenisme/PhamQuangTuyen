@@ -86,31 +86,30 @@ local Tab5 = Window:MakeTab({ "Auto",
 	PremiumOnly = false
 })
 Tab5:AddButton({
-	Name = "Farm Nhanh",
+	Name = "Auto Mirage Island",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/mirage-island"))()
 end
 })
 Tab5:AddButton({
-	Name = "Auto Bounty",
+	Name = "Auto Boss [Updatd]",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-        -- dán script vô
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
 end
 })
 Tab5:AddButton({
-	Name = "Keyboard",
+	Name = "Auto Chest [tween]",
 	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-     --dán script vô
+       getgenv().Team = "Marines" -- Pirates/Marines
+getgenv().Hide_Menu = false -- true/false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Autochest-Akgamingez"))()
 end
 })
 
 Tab5:AddButton({
-	Name = "Chests Farm",
+	Name = "Auto Chest [TPbypass]",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+       _G.Settings = { ["Enable Farm"] = true, ["SnipeLegendaryItem"] = false, ["Choose Team"] = "Marines", ["White Screen"] = false, ["Reset Anti Detect"] = true } loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
 end    
 })
 
