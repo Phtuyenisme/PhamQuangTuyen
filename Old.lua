@@ -127,42 +127,36 @@ Tab3:AddButton({
 end
 })
 Tab4:AddButton({
-	Name = "Royx Hub",
+	Name = "W-azure Hub",
 	Callback = function()
-         repeat wait(5) until game:IsLoaded()
-         loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+       getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   	end    
 })
 
 
 
 Tab4:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+end
+})
+
+
+Tab4:AddButton({
+	Name = "Min Gaming",
+	Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinME"))()
+end
+})
+
+
+Tab4:AddButton({
 	Name = "Trẩu Roblox",
 	Callback = function()
-         repeat wait(5) until game:IsLoaded()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauV1"))()
-end
-})
-
-
-Tab4:AddButton({
-	Name = "Cụt Tay Hub",
-	Callback = function()
-         repeat wait(5) until game:IsLoaded()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/main/Cuttayhubreal.lua'))()
-end
-})
-
-
-Tab4:AddButton({
-	Name = "Xero Hub",
-	Callback = function()
-         repeat wait(5) until game:IsLoaded()
-         getgenv().Team = "Marines" -- Pirates/Marines
-getgenv().Fix_Lag = true -- true/false
-getgenv().Auto_Execute = false -- true/false
-getgenv().Clear_Settings = false -- true/false
-loadstring(game:HttpGet("http://apixerohub.x10.mx/main.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
 end
 })
 
