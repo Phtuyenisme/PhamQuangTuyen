@@ -26,15 +26,17 @@ local Tab = Window:MakeTab({"tên tab",
 })
 
 Tab:AddButton({
-	Name = "NEW: Yumiara",
+	Name = "W-azure Hub",
 	Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
+       getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   	end    
 })
 Tab:AddButton({
-	Name = "NEW: Gangteng",
+	Name = "Redz Hub",
 	Callback = function()
-       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   	end    
 })
 Tab:AddButton({
