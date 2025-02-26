@@ -1,7 +1,7 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinh12eqweaws/vvvs/refs/heads/main/caz"))()
 local Window = redzlib:MakeWindow({
   Title = "Script Tổng Hợp[NEW]",
-  SubTitle = Phtuyen_zZ",
+  SubTitle = "Phtuyen_zZ",
 })
 
 local AFKOptions = {}
