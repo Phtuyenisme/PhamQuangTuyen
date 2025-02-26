@@ -51,30 +51,6 @@ local Tab2 = Window:MakeTab({ "Mod Client",
 })
 
 
-Tab2:AddButton({
-	Name = "Arceus X",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-end
-})
-
-Tab2:AddButton({
-	Name = "Krnl",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-      loadstring(game:HttpGet("https://pastebin.com/raw/M3HjLPU7"))()
-end
-})
-
-Tab2:AddButton({
-	Name = "Synapse X",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-      loadstring(game:HttpGet("https://pastebin.com/raw/QmqSgQ3K"))()
-end
-})
-
 local Tab3 = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10723425376",
 	PremiumOnly = false
