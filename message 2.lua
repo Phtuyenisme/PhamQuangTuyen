@@ -43,12 +43,12 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua"))()
   	end    
 })
-local Tab2 = Window:MakeTab({"tên tab",
+local Tab9 = Window:MakeTab({"tên tab",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
 
-Tab2:AddButton({
+Tab9:AddButton({
 	Name = "NEW: Yumiara",
 	Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/Main.lua"))()
