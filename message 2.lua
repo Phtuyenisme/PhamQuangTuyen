@@ -44,26 +44,6 @@ Tab:AddButton({
   	end    
 })
 
-local Tab3 = Window:MakeTab({"tên tab",
-	Icon = "rbxassetid://10723425376",
-	PremiumOnly = false
-})
-
-Tab3:AddButton({
-	Name = "Fix Lag",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-end
-})
-
-Tab3:AddButton({
-	Name = "Anti Kick",
-	Callback = function()
-        repeat wait(5) until game:IsLoaded()
-     loadstring(game:HttpGet("https://pastebin.com/raw/FPfaukXN"))()
-end
-})
 local Tab4 = Window:MakeTab({"Tên tab",
 	Icon = "rbxassetid://10734906975",
 	PremiumOnly = false
