@@ -4,11 +4,6 @@ local Window = redzlib:MakeWindow({
   SubTitle = "???",
 })
 
-       MinimizeButton({
-       Image = "rbxassetid://89923135895849",
-       Size = {10, 10}
-      })
-
 local AFKOptions = {}
 
 local Discord = Window:MakeTab({"Youtube", "video"})
