@@ -20,7 +20,7 @@ Discord:AddDiscordInvite({
   Logo = "rbxassetid://id ảnh",
   Invite = "https://www.facebook.com/ph.tuyenn0"
   })
-local Tab = Window:MakeTab({"tên tab",
+local Tab = Window:MakeTab({"Script",
 	Icon = "rbxassetid://10734941499",
 	PremiumOnly = false
 })
