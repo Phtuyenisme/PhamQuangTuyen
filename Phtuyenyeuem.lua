@@ -94,7 +94,8 @@ end
 Tab5:AddButton({
 	Name = "Auto Boss [Phếvcl]",
 	Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/shinhop/refs/heads/main/shinhopboss.lua"))()
+       getgenv().Team = “Pirates”
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughking-Rip-byTeddy"))()
 end
 })
 Tab5:AddButton({
