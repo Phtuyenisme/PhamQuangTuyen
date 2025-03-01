@@ -88,13 +88,13 @@ local Tab5 = Window:MakeTab({ "Auto",
 Tab5:AddButton({
 	Name = "Auto Mirage Island",
 	Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/mirage-island"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Mirage-Teddyreal-FREE"))()
 end
 })
 Tab5:AddButton({
-	Name = "Auto Boss [Updatd]",
+	Name = "Auto Boss [Phếvcl]",
 	Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/shinhop/refs/heads/main/shinhopboss.lua"))()
 end
 })
 Tab5:AddButton({
