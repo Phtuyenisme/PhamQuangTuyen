@@ -288,7 +288,7 @@ local playerGui = player:FindFirstChild("PlayerGui")
 local userInputService = game:GetService("UserInputService")
 
 -- Tạo một ScreenGui riêng để chứa nút Minimize
-local buttonGui = Instance.new("Hub")
+local buttonGui = Instance.new("ScreenGui")
 buttonGui.Name = "MinimizeButtonGUI"
 buttonGui.Parent = playerGui
 buttonGui.ResetOnSpawn = false -- Giữ vị trí sau khi reset
@@ -306,7 +306,7 @@ local uicorner = Instance.new("UICorner")
 uicorner.Parent = minimizeButton
 
 -- Tìm UI chính cần ẩn/hiện
-local myGui = playerGui:FindFirstChild("ScreenGui") -- ⚠ Thay "MainUI" bằng tên thực tế của UI
+local myGui = playerGui:FindFirstChild("Hub") -- ⚠ Thay "MainUI" bằng tên thực tế của UI
 
 -- Khi bấm, ẩn hoặc hiện UI chính
 minimizeButton.MouseButton1Click:Connect(function()
