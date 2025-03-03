@@ -92,10 +92,9 @@ Tab5:AddButton({
 end
 })
 Tab5:AddButton({
-	Name = "Auto Boss",
+	Name = "Auto Boss[Update]",
 	Callback = function()
-       getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughking-Rip-byTeddy"))()
+       --dán Script vô
 end
 })
 Tab5:AddButton({
