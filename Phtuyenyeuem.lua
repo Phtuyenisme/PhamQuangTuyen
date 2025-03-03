@@ -55,7 +55,7 @@ Tab2:AddButton({
 Tab2:AddButton({
 	Name = "HitBox",
 	Callback = function()
-       loadstring(Game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
 end
 })
 
@@ -94,7 +94,7 @@ end
 Tab5:AddButton({
 	Name = "Auto Boss",
 	Callback = function()
-       getgenv().Team = “Pirates”
+       getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughking-Rip-byTeddy"))()
 end
 })
