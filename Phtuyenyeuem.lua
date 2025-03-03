@@ -285,18 +285,20 @@ Tab4:AddButton({
 
 local player = game.Players.LocalPlayer
 local playerGui = player:FindFirstChild("PlayerGui")
+local userInputService = game:GetService("UserInputService")
 
 -- Tạo một ScreenGui riêng để chứa nút Minimize
-local buttonGui = Instance.new("ScreenGui99")
+local buttonGui = Instance.new("ScreenGui")
 buttonGui.Name = "MinimizeButtonGUI"
 buttonGui.Parent = playerGui
+buttonGui.ResetOnSpawn = false -- Giữ vị trí sau khi reset
 
 -- Tạo nút Minimize
 local minimizeButton = Instance.new("ImageButton")
 minimizeButton.Size = UDim2.new(0, 40, 0, 40)
 minimizeButton.Position = UDim2.new(1, -50, 0, 10) -- Góc trên phải màn hình
 minimizeButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-minimizeButton.Image = "rbxassetid://112969263935543" -- Icon Minimize
+minimizeButton.Image = "rbxassetid://10734895698" -- Icon Minimize
 minimizeButton.Parent = buttonGui -- Gắn vào GUI riêng biệt
 
 -- Thêm góc bo tròn
@@ -310,5 +312,42 @@ local myGui = playerGui:FindFirstChild("ScreenGui") -- ⚠ Thay "MainUI" bằng 
 minimizeButton.MouseButton1Click:Connect(function()
     if myGui then
         myGui.Enabled = not myGui.Enabled -- Ẩn/Hiện UI chính
+    end
+end)
+
+-- 📌 Chức năng kéo thả nút Minimize
+local dragging, dragInput, dragStart, startPos
+
+local function update(input)
+    local delta = input.Position - dragStart
+    minimizeButton.Position = UDim2.new(
+        0, startPos.X.Offset + delta.X,
+        0, startPos.Y.Offset + delta.Y
+    )
+end
+
+minimizeButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = minimizeButton.Position
+        
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+minimizeButton.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement then
+        dragInput = input
+    end
+end)
+
+userInputService.InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        update(input)
     end
 end)
