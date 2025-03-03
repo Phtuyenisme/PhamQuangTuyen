@@ -99,11 +99,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
 end
 })
 Tab5:AddButton({
-	Name = "Auto Chest [tween]",
+	Name = "Auto Boss+MirageIsland",
 	Callback = function()
-       getgenv().Team = "Marines" -- Pirates/Marines
-getgenv().Hide_Menu = false -- true/false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Autochest-Akgamingez"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
 end
 })
 
