@@ -4,6 +4,36 @@ local Window = redzlib:MakeWindow({
   SubTitle = "Phtuyenn",
 })
 
+local player = game.Players.LocalPlayer
+local playerGui = player:FindFirstChild("PlayerGui")
+
+-- Tạo một ScreenGui riêng để chứa nút Minimize
+local buttonGui = Instance.new("ScreenGui99")
+buttonGui.Name = "MinimizeButtonGUI"
+buttonGui.Parent = playerGui
+
+-- Tạo nút Minimize
+local minimizeButton = Instance.new("ImageButton")
+minimizeButton.Size = UDim2.new(0, 40, 0, 40)
+minimizeButton.Position = UDim2.new(1, -50, 0, 10) -- Góc trên phải màn hình
+minimizeButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+minimizeButton.Image = "rbxassetid://10734895698" -- Icon Minimize
+minimizeButton.Parent = buttonGui -- Gắn vào GUI riêng biệt
+
+-- Thêm góc bo tròn
+local uicorner = Instance.new("UICorner")
+uicorner.Parent = minimizeButton
+
+-- Tìm UI chính cần ẩn/hiện
+local myGui = playerGui:FindFirstChild("ScreenGui") -- ⚠ Thay "MainUI" bằng tên thực tế của UI
+
+-- Khi bấm, ẩn hoặc hiện UI chính
+minimizeButton.MouseButton1Click:Connect(function()
+    if myGui then
+        myGui.Enabled = not myGui.Enabled -- Ẩn/Hiện UI chính
+    end
+end)
+
 local AFKOptions = {}
 
 local Discord = Window:MakeTab({"TikTok", "video"})
