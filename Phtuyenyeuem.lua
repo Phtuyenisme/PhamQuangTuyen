@@ -306,7 +306,7 @@ local uicorner = Instance.new("UICorner")
 uicorner.Parent = minimizeButton
 
 -- Tìm UI chính cần ẩn/hiện
-local myGui = playerGui:FindFirstChild("Hub") -- ⚠ Thay "MainUI" bằng tên thực tế của UI
+local myGui = playerGui:FindFirstChild("Main") -- ⚠ Thay "MainUI" bằng tên thực tế của UI
 
 -- Khi bấm, ẩn hoặc hiện UI chính
 minimizeButton.MouseButton1Click:Connect(function()
