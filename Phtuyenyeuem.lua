@@ -288,7 +288,7 @@ local playerGui = player:FindFirstChild("PlayerGui")
 local userInputService = game:GetService("UserInputService")
 
 -- Tạo một ScreenGui riêng để chứa nút Minimize
-local buttonGui = Instance.new("ScreenGui")
+local buttonGui = Instance.new("Hub")
 buttonGui.Name = "MinimizeButtonGUI"
 buttonGui.Parent = playerGui
 buttonGui.ResetOnSpawn = false -- Giữ vị trí sau khi reset
