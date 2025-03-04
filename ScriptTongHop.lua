@@ -1,46 +1,82 @@
---ScriptBY:PhtuyenzZ
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Phtuyenisme/PhamQuangTuyen/refs/heads/main/message.lua')))()
-local Window = OrionLib:MakeWindow({
-    Name = "Script Tổng Hợp | Phtuyen⚡️",
-    HidePremium = false,
-    SaveConfig = true,
-    ConfigFolder = "PhtuyenConfig"
+ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Window = Fluent:CreateWindow({
+    Title = "name",
+    SubTitle = "by name",
+    TabWidth = 160,
+    Size = UDim2.new(0, 580, 0, 460),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
 })
 
--- 📌 Tạo Tab `Farm`
-local FarmTab = MakeTab("Farm")
+Window.Draggable = false
+Window.Position = UDim2.new(0.3, 0, 0.2, 0)
 
--- 📌 Tạo nút `Redz` trong Tab `Farm`
-local RedzButton = Instance.new("TextButton")
-RedzButton.Size = UDim2.new(0, 150, 0, 40)
-RedzButton.Position = UDim2.new(0.5, -75, 0, 20) -- ⚡ Căn giữa theo chiều ngang
-RedzButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-RedzButton.Text = "Redz"
-RedzButton.Font = Enum.Font.GothamBold
-RedzButton.TextSize = 16
-RedzButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-RedzButton.Parent = FarmTab
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://4483345998" })
+}
 
-RedzButton.MouseButton1Click:Connect(function()
-    print("Nút Redz Đã Được Bấm!")
-end)
+Tabs.Main:AddSection("name")
+local hakiRunning = false
 
--- 📌 Tạo nút `W-Azure` trong Tab `Farrm`
-local WAzureButton = Instance.new("TextButton")
-WAzureButton.Size = UDim2.new(0, 150, 0, 40)
-WAzureButton.Position = UDim2.new(0.5, -75, 0, 70) -- ⚡ Dưới nút `Redz`
-WAzureButton.BackgroundColor3 = Color3.fromRGB(50, 50, 100)
-WAzureButton.Text = "W-Azure"
-WAzureButton.Font = Enum.Font.GothamBold
-WAzureButton.TextSize = 16
-WAzureButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-WAzureButton.Parent = FarmTab
+local VirtualInputManager = game:GetService("VirtualInputManager")
 
-WAzureButton.MouseButton1Click:Connect(function()
-    print("Nút W-Azure Đã Được Bấm!")
-end)
+Tabs.Main:AddToggle({
+    Title = "name tab",
+    Description = "name",
+    Default = false,
+    Callback = function(value)
+        hakiRunning = value
+        if hakiRunning then
+            spawn(function()
+                while hakiRunning do
+                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.J, false, game)
+                    wait(0.1)
+                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.J, false, game)
+                    wait(5)
+                end
+            end)
+            Fluent:Notify({
+                Title = "name",
+                Content = "i dont know",
+                Duration = 3
+            })
+        else
+            Fluent:Notify({
+                Title = "name",
+                Content = "i dont know",
+                Duration = 3
+            })
+        end
+    end
+}):SetIcon("rbxassetid://4483345998")
 
--- 📌 Hiển thị mặc định Tab `Farm`
-FarmTab.Visible = true
+Tabs.Main:AddSection("Menu Control")
 
+local menuVisible = true
 
+Tabs.Main:AddButton({
+    Title = "Ẩn/Hiện Menu",
+    Description = "Ẩn hoặc hiện menu",
+    Callback = function()
+        if menuVisible then
+            Window:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.3, true)
+            menuVisible = false
+            Fluent:Notify({
+                Title = "name",
+                Content = "i dont know",
+                Duration = 3
+            })
+        else
+            Window:TweenSize(UDim2.new(0, 580, 0, 460), "Out", "Quad", 0.3, true)
+            menuVisible = true
+            Fluent:Notify({
+                Title = "????",
+                Content = "???",
+                Duration = 3
+            })
+        end
+    end
+})
+
+Window:SelectTab(1)
