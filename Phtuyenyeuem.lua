@@ -4,6 +4,60 @@ local Window = redzlib:MakeWindow({
   SubTitle = "Phtuyenn",
 })
 
+-- 📌 Tạo UI Riêng Cho Nút Ẩn/Hiện
+local ToggleGui = Instance.new("ScreenGui")
+ToggleGui.ResetOnSpawn = false -- ⚡ Đảm bảo nút không bị mất khi respawn
+ToggleGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- ⚡ Đảm bảo hiển thị
+
+-- 📌 Tạo Nút Ẩn/Hiện UI (Dùng ImageButton)
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- ⚡ Kích thước lớn hơn để dễ kéo
+ToggleButton.Position = UDim2.new(0.2, 0, 0.85, 0) -- ⚡ Căn chỉnh vị trí góc trái
+ToggleButton.BackgroundTransparency = 1
+ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh bạn muốn
+ToggleButton.Parent = ToggleGui
+
+local isHidden = false
+ToggleButton.MouseButton1Click:Connect(function()
+    isHidden = not isHidden
+    MainFrame.Visible = not isHidden
+    ToggleButton.Image = isHidden and "rbxassetid://7072720870" or "rbxassetid://7072719338" -- ⚡ Đổi icon khi ẩn/hiện
+end)
+
+-- 📌 Hệ Thống Kéo Thả Cho Nút Ẩn/Hiện
+local DraggingToggle, DragStartToggle, StartPosToggle
+
+ToggleButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        DraggingToggle = true
+        DragStartToggle = input.Position
+        StartPosToggle = ToggleButton.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                DraggingToggle = false
+            end
+        end)
+    end
+end)
+
+ToggleButton.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        DragInputToggle = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if DraggingToggle and input == DragInputToggle then
+        local delta = input.Position - DragStartToggle
+        ToggleButton.Position = UDim2.new(0, StartPosToggle.X.Offset + delta.X, 0, StartPosToggle.Y.Offset + delta.Y)
+    end
+end)
+
+-- 📌 Đảm bảo nút luôn hiển thị đúng
+ToggleButton.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleButton.ZIndex = 10 -- ⚡ Luôn nằm trên cùng
+
 local AFKOptions = {}
 
 local Discord = Window:MakeTab({"TikTok", "video"})
