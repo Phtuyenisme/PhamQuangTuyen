@@ -3,6 +3,12 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 local Window = OrionLib:MakeWindow({Name = "Script Tổng Hợp[V3] | Phtuyen⚡️", HidePremium = false, IntroEnabled = false, IntroText = "BUỒI | LỒN", SaveConfig = true, ConfigFolder = "PhtuyenConfig"})
 
 --TAB
+local Discord = Window:MakeTab({
+	Name = "Phtuyen💗",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 local Tab = Window:MakeTab({
 	Name = "ScriptFarm",
 	Icon = "rbxassetid://4483345998",
