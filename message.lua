@@ -1,16 +1,16 @@
--- UI Hiện Đại Dựa Trên OrionLib (Cải Tiến)
+-- UI Hiện Đại Dựa Trên OrionLib (Cải Tiến, Nhỏ Gọn)
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
--- 📌 Tạo UI Chính
+-- 📌 Tạo UI Chính (Nhỏ Gọn)
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- Đảm bảo hiển thị
 
 local MainFrame = Instance.new("Frame")
-MainFrame.Size = UDim2.new(0, 600, 0, 400)
-MainFrame.Position = UDim2.new(0.5, -300, 0.5, -200)
+MainFrame.Size = UDim2.new(0, 400, 0, 250) -- ⚡ Giảm kích thước UI
+MainFrame.Position = UDim2.new(0.5, -200, 0.5, -125) -- ⚡ Điều chỉnh để căn giữa
 MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 MainFrame.BorderSizePixel = 0
 MainFrame.Parent = ScreenGui
@@ -19,20 +19,20 @@ local UICorner = Instance.new("UICorner")
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = MainFrame
 
--- Tiêu đề
+-- 📌 Tiêu đề
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.BackgroundTransparency = 1
-Title.Text = "UI Hiện Đại - Phtuyenz"
-Title.TextSize = 18
+Title.Text = "UI Mini - Phtuyenz"
+Title.TextSize = 16 -- ⚡ Chữ nhỏ hơn
 Title.Font = Enum.Font.GothamBold
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Parent = MainFrame
 
--- 📌 Nút Minimize
+-- 📌 Nút Minimize (Giữ Nguyên)
 local MinimizeButton = Instance.new("TextButton")
 MinimizeButton.Size = UDim2.new(0, 40, 0, 40)
-MinimizeButton.Position = UDim2.new(1, -50, 0, 5)
+MinimizeButton.Position = UDim2.new(1, -45, 0, 5)
 MinimizeButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
 MinimizeButton.Text = "-"
 MinimizeButton.Font = Enum.Font.GothamBold
@@ -42,15 +42,15 @@ MinimizeButton.Parent = MainFrame
 
 local function ToggleMinimize()
     if MainFrame.Size.Y.Offset > 50 then
-        TweenService:Create(MainFrame, TweenInfo.new(0.3), {Size = UDim2.new(0, 600, 0, 50)}):Play()
+        TweenService:Create(MainFrame, TweenInfo.new(0.3), {Size = UDim2.new(0, 400, 0, 50)}):Play()
     else
-        TweenService:Create(MainFrame, TweenInfo.new(0.3), {Size = UDim2.new(0, 600, 0, 400)}):Play()
+        TweenService:Create(MainFrame, TweenInfo.new(0.3), {Size = UDim2.new(0, 400, 0, 250)}):Play()
     end
 end
 
 MinimizeButton.MouseButton1Click:Connect(ToggleMinimize)
 
--- 📌 Hệ thống kéo thả
+-- 📌 Hệ thống kéo thả (Không đổi)
 local Dragging, DragStart, StartPos
 
 local function UpdateDrag(input)
@@ -76,22 +76,19 @@ end)
 local ToggleGui = Instance.new("ScreenGui")
 ToggleGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- Đảm bảo hiển thị
 
--- 📌 Tạo Nút Ẩn/Hiện UI (Nằm Ngoài UI Chính)
-local ToggleButton = Instance.new("TextButton")
-ToggleButton.Size = UDim2.new(0, 150, 0, 40)
-ToggleButton.Position = UDim2.new(0.02, 0, 0.9, 0) -- ⚡ Luôn nằm góc trái màn hình
-ToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-ToggleButton.Text = "Ẩn UI"
-ToggleButton.Font = Enum.Font.GothamBold
-ToggleButton.TextSize = 16
-ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+-- 📌 Tạo Nút Ẩn/Hiện UI (Dùng ImageButton)
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Size = UDim2.new(0, 40, 0, 40) -- ⚡ Nhỏ hơn
+ToggleButton.Position = UDim2.new(0.02, 0, 0.85, 0) -- ⚡ Căn chỉnh góc trái màn hình
+ToggleButton.BackgroundTransparency = 1
+ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh bạn muốn
 ToggleButton.Parent = ToggleGui
 
 local isHidden = false
 ToggleButton.MouseButton1Click:Connect(function()
     isHidden = not isHidden
     MainFrame.Visible = not isHidden
-    ToggleButton.Text = isHidden and "Hiện UI" or "Ẩn UI"
+    ToggleButton.Image = isHidden and "rbxassetid://7072720870" or "rbxassetid://7072719338" -- ⚡ Đổi icon khi ẩn/hiện
 end)
 
 -- 📌 Đảm bảo nút luôn hiển thị đúng
