@@ -65,6 +65,55 @@ Title.Font = Enum.Font.GothamBold
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Parent = MainFrame
 
+-- 📌 Hệ Thống Tab (Danh sách Tab)
+local TabMenu = Instance.new("Frame")
+TabMenu.Size = UDim2.new(1, 0, 0, 40)
+TabMenu.Position = UDim2.new(0, 0, 0, 40)
+TabMenu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TabMenu.Parent = MainFrame
+
+-- 📌 Khu vực hiển thị nội dung Tab
+local TabContent = Instance.new("Frame")
+TabContent.Size = UDim2.new(1, 0, 1, -80) -- ⚡ Trừ phần tiêu đề & Tab Menu
+TabContent.Position = UDim2.new(0, 0, 0, 80)
+TabContent.BackgroundTransparency = 1
+TabContent.Parent = MainFrame
+
+-- 📌 Hệ thống `MakeTab()`
+local Tabs = {}
+
+function MakeTab(tabName)
+    -- 📌 Tạo Tab Button
+    local TabButton = Instance.new("TextButton")
+    TabButton.Size = UDim2.new(0, 100, 0, 40)
+    TabButton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+    TabButton.Text = tabName
+    TabButton.Font = Enum.Font.GothamBold
+    TabButton.TextSize = 14
+    TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TabButton.Parent = TabMenu
+
+    -- 📌 Tạo khu vực nội dung Tab
+    local TabFrame = Instance.new("Frame")
+    TabFrame.Size = UDim2.new(1, 0, 1, 0)
+    TabFrame.BackgroundTransparency = 1
+    TabFrame.Visible = false
+    TabFrame.Parent = TabContent
+
+    -- 📌 Thêm Tab vào danh sách
+    Tabs[tabName] = TabFrame
+
+    -- 📌 Xử lý khi bấm vào Tab
+    TabButton.MouseButton1Click:Connect(function()
+        for _, frame in pairs(Tabs) do
+            frame.Visible = false
+        end
+        TabFrame.Visible = true
+    end)
+    
+    return TabFrame
+end
+
 -- 📌 Hệ Thống Kéo Thả UI Chính
 local DraggingUI, DragStartUI, StartPosUI
 
