@@ -1,4 +1,4 @@
--- UI Hiện Đại Dựa Trên OrionLib (Cải Tiến, Nhỏ Gọn & Kéo Thả Mượt)
+-- UI Hiện Đại Dựa Trên OrionLib (Cải Tiến, Kéo Thả Mượt)
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
@@ -26,7 +26,7 @@ ToggleGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- ⚡ Đảm bảo hi�
 -- 📌 Tạo Nút Ẩn/Hiện UI (Dùng ImageButton)
 local ToggleButton = Instance.new("ImageButton")
 ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- ⚡ Kích thước lớn hơn để dễ kéo
-ToggleButton.Position = UDim2.new(0.02, 0, 0.85, 0) -- ⚡ Căn chỉnh góc trái màn hình
+ToggleButton.Position = UDim2.new(0, 20, 0, 400) -- ⚡ Căn chỉnh vị trí góc trái
 ToggleButton.BackgroundTransparency = 1
 ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh bạn muốn
 ToggleButton.Parent = ToggleGui
@@ -38,27 +38,33 @@ ToggleButton.MouseButton1Click:Connect(function()
     ToggleButton.Image = isHidden and "rbxassetid://7072720870" or "rbxassetid://7072719338" -- ⚡ Đổi icon khi ẩn/hiện
 end)
 
--- 📌 Hệ Thống Kéo Thả Cho Nút Ẩn/Hiện
-local Dragging, DragStart, StartPos
+-- 📌 Hệ Thống Kéo Thả Cho Nút Ẩn/Hiện (ĐÃ SỬA)
+local Dragging, DragInput, DragStart, StartPos
 
 ToggleButton.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
         Dragging = true
         DragStart = input.Position
         StartPos = ToggleButton.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                Dragging = false
+            end
+        end)
     end
 end)
 
 ToggleButton.InputChanged:Connect(function(input)
-    if Dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        local delta = input.Position - DragStart
-        ToggleButton.Position = UDim2.new(0, StartPos.X.Offset + delta.X, 0, StartPos.Y.Offset + delta.Y)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        DragInput = input
     end
 end)
 
-ToggleButton.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        Dragging = false
+UserInputService.InputChanged:Connect(function(input)
+    if Dragging and input == DragInput then
+        local delta = input.Position - DragStart
+        ToggleButton.Position = UDim2.new(0, StartPos.X.Offset + delta.X, 0, StartPos.Y.Offset + delta.Y)
     end
 end)
 
