@@ -19,44 +19,6 @@ local UICorner = Instance.new("UICorner")
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = MainFrame
 
--- 📌 Tiêu đề (Dùng làm khu vực kéo UI)
-local Title = Instance.new("TextLabel")
-Title.Size = UDim2.new(1, 0, 0, 40)
-Title.BackgroundTransparency = 1
-Title.Text = "UI Mini - Phtuyenz"
-Title.TextSize = 16 -- ⚡ Chữ nhỏ hơn
-Title.Font = Enum.Font.GothamBold
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.Parent = MainFrame
-
--- 📌 Hệ Thống Kéo Thả UI
-local Dragging, DragStart, StartPos
-
-local function UpdateDrag(input)
-    local delta = input.Position - DragStart
-    MainFrame.Position = UDim2.new(0, StartPos.X.Offset + delta.X, 0, StartPos.Y.Offset + delta.Y)
-end
-
-Title.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        Dragging = true
-        DragStart = input.Position
-        StartPos = MainFrame.Position
-
-        input.Changed:Connect(function()
-            if input.UserInputState == Enum.UserInputState.End then
-                Dragging = false
-            end
-        end)
-    end
-end)
-
-UserInputService.InputChanged:Connect(function(input)
-    if Dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        UpdateDrag(input)
-    end
-end)
-
 -- 📌 Tạo UI Riêng Cho Nút Ẩn/Hiện
 local ToggleGui = Instance.new("ScreenGui")
 ToggleGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- ⚡ Đảm bảo hiển thị
@@ -77,30 +39,26 @@ ToggleButton.MouseButton1Click:Connect(function()
 end)
 
 -- 📌 Hệ Thống Kéo Thả Cho Nút Ẩn/Hiện
-local ToggleDragging, ToggleDragStart, ToggleStartPos
-
-local function UpdateToggleDrag(input)
-    local delta = input.Position - ToggleDragStart
-    ToggleButton.Position = UDim2.new(0, ToggleStartPos.X.Offset + delta.X, 0, ToggleStartPos.Y.Offset + delta.Y)
-end
+local Dragging, DragStart, StartPos
 
 ToggleButton.InputBegan:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        ToggleDragging = true
-        ToggleDragStart = input.Position
-        ToggleStartPos = ToggleButton.Position
-
-        input.Changed:Connect(function()
-            if input.UserInputState == Enum.UserInputState.End then
-                ToggleDragging = false
-            end
-        end)
+        Dragging = true
+        DragStart = input.Position
+        StartPos = ToggleButton.Position
     end
 end)
 
-UserInputService.InputChanged:Connect(function(input)
-    if ToggleDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        UpdateToggleDrag(input)
+ToggleButton.InputChanged:Connect(function(input)
+    if Dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        local delta = input.Position - DragStart
+        ToggleButton.Position = UDim2.new(0, StartPos.X.Offset + delta.X, 0, StartPos.Y.Offset + delta.Y)
+    end
+end)
+
+ToggleButton.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        Dragging = false
     end
 end)
 
