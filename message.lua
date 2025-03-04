@@ -4,7 +4,7 @@ local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
--- Tạo UI
+-- 📌 Tạo UI Chính
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.CoreGui
 
@@ -72,16 +72,20 @@ UserInputService.InputChanged:Connect(function(input)
     end
 end)
 
--- 📌 Nút Ẩn/Hiện UI
+-- 📌 Tạo UI Riêng Cho Nút Ẩn/Hiện
+local ToggleGui = Instance.new("ScreenGui")
+ToggleGui.Parent = game.CoreGui
+
+-- 📌 Tạo Nút Ẩn/Hiện UI (Nằm Ngoài UI Chính)
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0, 150, 0, 40)
-ToggleButton.Position = UDim2.new(0.5, -75, 1, 10) -- Dưới UI
+ToggleButton.Position = UDim2.new(0, 20, 0.8, 0) -- Góc trái màn hình
 ToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ToggleButton.Text = "Ẩn UI"
 ToggleButton.Font = Enum.Font.GothamBold
 ToggleButton.TextSize = 16
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleButton.Parent = ScreenGui
+ToggleButton.Parent = ToggleGui
 
 local isHidden = false
 ToggleButton.MouseButton1Click:Connect(function()
