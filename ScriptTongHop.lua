@@ -29,33 +29,3 @@ AboutTab:AddButton({
         setclipboard("https://discord.gg/example") -- Sao chép link Discord vào clipboard
     end
 })
-
-local Tab = Window:MakeTab({
-	Name = "ScriptFarm",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Tab2 = Window:MakeTab({
-	Name = "KaiTun",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Tab3 = Window:MakeTab({
-	Name = "PvP",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Tab4 = Window:MakeTab({
-	Name = "Auto",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Tab5 = Window:MakeTab({
-	Name = "Troll",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
