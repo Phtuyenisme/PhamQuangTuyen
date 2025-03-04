@@ -13,7 +13,7 @@ local AboutTab = Window:MakeTab({
 -- 📌 Thêm Logo
 AboutTab:AddImage({
     Image = "rbxassetid://112969263935543", -- ⚠ Thay bằng ID hình ảnh của bạn
-    ImageSize = UDim2.new(0, 150, 0, 150) -- Kích thước Logo
+    ImageSize = UDim2.new(0, 50, 0, 50) -- Kích thước Logo
 })
 
 -- 📌 Thêm nội dung giới thiệu
