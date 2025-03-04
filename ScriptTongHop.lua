@@ -10,19 +10,6 @@ local AboutTab = Window:MakeTab({
     PremiumOnly = false
 })
 
--- 📌 Thêm Logo
-AboutTab:AddImage({
-    Image = "rbxassetid://112969263935543", -- ⚠ Thay bằng ID hình ảnh của bạn
-    ImageSize = UDim2.new(0, 50, 0, 50) -- Kích thước Logo
-})
-
--- 📌 Thêm nội dung giới thiệu
-AboutTab:AddLabel("🎉 Chào mừng bạn đến với Script Tổng Hợp V2!") 
-AboutTab:AddLabel("🛠 Phiên bản: 1.0.0") 
-AboutTab:AddLabel("👤 Tác giả: Phtuyenn") 
-AboutTab:AddLabel("🔗 Discord: discord.gg/example") 
-
--- 📌 Thêm nút liên hệ Discord
 AboutTab:AddButton({
     Name = "🔗 Tham gia Discord",
     Callback = function()
