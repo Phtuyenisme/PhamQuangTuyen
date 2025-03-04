@@ -61,12 +61,13 @@ end)
 
 -- 📌 Tạo UI Riêng Cho Nút Ẩn/Hiện
 local ToggleGui = Instance.new("ScreenGui")
+ToggleGui.ResetOnSpawn = false -- ⚡ Đảm bảo nút không bị mất khi respawn
 ToggleGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- ⚡ Đảm bảo hiển thị
 
 -- 📌 Tạo Nút Ẩn/Hiện UI (Dùng ImageButton)
 local ToggleButton = Instance.new("ImageButton")
 ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- ⚡ Kích thước lớn hơn để dễ kéo
-ToggleButton.Position = UDim2.new(0, 20, 0, 400) -- ⚡ Căn chỉnh vị trí góc trái
+ToggleButton.Position = UDim2.new(0.2, 0, 0.85, 0) -- ⚡ Căn chỉnh vị trí góc trái
 ToggleButton.BackgroundTransparency = 1
 ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh bạn muốn
 ToggleButton.Parent = ToggleGui
