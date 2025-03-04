@@ -1,4 +1,4 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinh12eqweaws/vvvs/refs/heads/main/caz"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Phtuyenisme/PhamQuangTuyen/refs/heads/main/message%202.lua"))()
 local Window = redzlib:MakeWindow({
   Title = "Script Tổng Hợp V2",
   SubTitle = "Phtuyenn",
