@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "Script Tổng Hợp[V3] | Phtuyen⚡
 
 --TAB
 local Discord = Window:MakeTab({
-	Name = "Phtuyen💗",
+	Name = "Phtuyen⚡️",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
