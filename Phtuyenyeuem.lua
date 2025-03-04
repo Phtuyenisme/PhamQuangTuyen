@@ -297,8 +297,18 @@ ToggleButton.BackgroundTransparency = 1 -- ⚡ Không có nền
 ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh logo khi UI hiện
 ToggleButton.Parent = ToggleGui -- ⚡ Đặt nút vào `ToggleGui`
 
-ToggleButton.MouseButton1Click:Connect(function()
+-- 📌 Đảm bảo `Window` có phương thức ẩn UI (kiểm tra nếu RedzLib có `Toggle` UI)
+local function ToggleUI()
     isUIVisible = not isUIVisible
-    Window.MainFrame.Visible = isUIVisible
-    ToggleButton.Image = isUIVisible and "rbxassetid://7072719338" or "rbxassetid://7072720870" -- ⚡ Đổi icon khi ẩn/hiện
-end)
+
+    if isUIVisible then
+        Window:Show() -- ⚡ Hiện UI (nếu RedzLib hỗ trợ)
+        ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Icon khi UI mở
+    else
+        Window:Hide() -- ⚡ Ẩn UI (nếu RedzLib hỗ trợ)
+        ToggleButton.Image = "rbxassetid://7072720870" -- ⚡ Icon khi UI ẩn
+    end
+end
+
+-- 📌 Gán chức năng cho nút
+ToggleButton.MouseButton1Click:Connect(ToggleUI)
