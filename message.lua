@@ -6,7 +6,7 @@ local LocalPlayer = Players.LocalPlayer
 
 -- 📌 Tạo UI Chính
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- Đảm bảo hiển thị
 
 local MainFrame = Instance.new("Frame")
 MainFrame.Size = UDim2.new(0, 600, 0, 400)
@@ -29,7 +29,7 @@ Title.Font = Enum.Font.GothamBold
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Parent = MainFrame
 
--- Nút Minimize
+-- 📌 Nút Minimize
 local MinimizeButton = Instance.new("TextButton")
 MinimizeButton.Size = UDim2.new(0, 40, 0, 40)
 MinimizeButton.Position = UDim2.new(1, -50, 0, 5)
@@ -50,7 +50,7 @@ end
 
 MinimizeButton.MouseButton1Click:Connect(ToggleMinimize)
 
--- Hệ thống kéo thả
+-- 📌 Hệ thống kéo thả
 local Dragging, DragStart, StartPos
 
 local function UpdateDrag(input)
@@ -74,12 +74,12 @@ end)
 
 -- 📌 Tạo UI Riêng Cho Nút Ẩn/Hiện
 local ToggleGui = Instance.new("ScreenGui")
-ToggleGui.Parent = game.CoreGui
+ToggleGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- Đảm bảo hiển thị
 
 -- 📌 Tạo Nút Ẩn/Hiện UI (Nằm Ngoài UI Chính)
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0, 150, 0, 40)
-ToggleButton.Position = UDim2.new(0, 20, 0.8, 0) -- Góc trái màn hình
+ToggleButton.Position = UDim2.new(0.02, 0, 0.9, 0) -- ⚡ Luôn nằm góc trái màn hình
 ToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ToggleButton.Text = "Ẩn UI"
 ToggleButton.Font = Enum.Font.GothamBold
@@ -93,3 +93,7 @@ ToggleButton.MouseButton1Click:Connect(function()
     MainFrame.Visible = not isHidden
     ToggleButton.Text = isHidden and "Hiện UI" or "Ẩn UI"
 end)
+
+-- 📌 Đảm bảo nút luôn hiển thị đúng
+ToggleButton.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleButton.ZIndex = 10 -- ⚡ Luôn nằm trên cùng
