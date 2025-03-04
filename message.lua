@@ -1723,4 +1723,8 @@ function OrionLib:Destroy()
 	Orion:Destroy()
 end
 
+for _, tween in pairs(TweenService:GetChildren()) do
+    tween:Destroy()
+end
+
 return OrionLib
