@@ -54,16 +54,8 @@ local Tab4 = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab4 = Window:MakeTab({
+local Tab5 = Window:MakeTab({
 	Name = "Troll",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
---Function
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
 })
