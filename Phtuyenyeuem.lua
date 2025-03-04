@@ -282,3 +282,23 @@ Tab4:AddButton({
        -- dán script vô
   	end    
 })
+
+-- 📌 Tạo `ScreenGui` Riêng Cho Nút Ẩn/Hiện
+local ToggleGui = Instance.new("ScreenGui")
+ToggleGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- ⚡ Đảm bảo hiển thị đúng
+
+-- 📌 Tạo Nút Ẩn/Hiện UI (Dùng Hình Ảnh)
+local isUIVisible = true
+local ToggleButton = Instance.new("ImageButton")
+
+ToggleButton.Size = UDim2.new(0, 40, 0, 40) -- ⚡ Kích thước nút
+ToggleButton.Position = UDim2.new(0, 10, 0, 10) -- ⚡ Góc trên bên trái màn hình
+ToggleButton.BackgroundTransparency = 1 -- ⚡ Không có nền
+ToggleButton.Image = "rbxassetid://7072719338" -- ⚡ Thay bằng ID ảnh logo khi UI hiện
+ToggleButton.Parent = ToggleGui -- ⚡ Đặt nút vào `ToggleGui`
+
+ToggleButton.MouseButton1Click:Connect(function()
+    isUIVisible = not isUIVisible
+    Window.MainFrame.Visible = isUIVisible
+    ToggleButton.Image = isUIVisible and "rbxassetid://7072719338" or "rbxassetid://7072720870" -- ⚡ Đổi icon khi ẩn/hiện
+end)
