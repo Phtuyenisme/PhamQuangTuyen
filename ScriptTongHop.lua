@@ -33,6 +33,7 @@ local Tab4 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--Function
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
