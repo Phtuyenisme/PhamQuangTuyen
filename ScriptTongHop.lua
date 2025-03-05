@@ -2580,7 +2580,7 @@ function royxui:royxstart(text,logo)
 	return royxtabui
 end
 
-local Main = royxui:royxstart("Royx Hub","110276830369206")
+local Main = royxui:royxstart("Royx Hub")
 
 local Tab = Main:royxtab("Tab 1")
 
