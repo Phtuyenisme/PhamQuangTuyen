@@ -306,10 +306,10 @@ ToggleCorner.Parent = ToggleButton
 -- Thêm icon cho nút
 local ToggleIcon = Instance.new("ImageLabel")
 ToggleIcon.Parent = ToggleButton
-ToggleIcon.Size = UDim2.new(0.6, 0, 0.6, 0) -- Kích thước icon
+ToggleIcon.Size = UDim2.new(50, 0, 50, 0) -- Kích thước icon
 ToggleIcon.Position = UDim2.new(0.2, 0, 0.2, 0) -- Canh giữa
 ToggleIcon.BackgroundTransparency = 1
-ToggleIcon.Image = "rbxassetid://6031068427" -- Icon hình con mắt (hoặc thay bằng icon bạn muốn)
+ToggleIcon.Image = "rbxassetid://140362506923219" -- Icon hình con mắt (hoặc thay bằng icon bạn muốn)
 
 -- Biến kiểm tra trạng thái hiển thị UI
 local isVisible = true
