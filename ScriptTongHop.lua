@@ -320,7 +320,7 @@ function royxui:royxstart(text,logo)
 
 	function royxui:Notification(text,text2,delays,logo)
 		if logo == nil then
-			logo = "8543527952"
+			logo = "112969263935543"
 		end
 		if delays == nil then
 			delays = 1
