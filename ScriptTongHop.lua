@@ -2580,7 +2580,7 @@ function royxui:royxstart(text,logo)
 	return royxtabui
 end
 
-local Main = royxui:royxstart("Royx Hub")
+local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 
 local Tab = Main:royxtab("Tab 1")
 
