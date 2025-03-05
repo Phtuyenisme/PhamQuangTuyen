@@ -401,7 +401,7 @@ end)
 		Main_UiStroke.Color = Color3.fromRGB(50, 101, 152)
 		Main_UiStroke.Transparency = 0
 
-		TitleFrame:TweenSizeAndPosition(UDim2.new(0, 250-10, 0, 70),  UDim2.new(0.5, 0, 0.5,0), "Out", "Back", 0.3, true)
+		TitleFrame:TweenSizeAndPosition(UDim2.new(0, 240, 0, 70),  UDim2.new(0.9, -120, 0.1, 0), "Out", "Back", 0.3, true)
 
 		local ConnerTitile = Instance.new("UICorner")
 
