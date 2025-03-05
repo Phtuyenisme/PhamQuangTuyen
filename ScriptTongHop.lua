@@ -2717,7 +2717,7 @@ end
 end
 
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 0.5, "rbxassetid://112969263935543")
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
 local Tab = Main:royxtab("Tab 1")
 
@@ -2732,5 +2732,5 @@ Page:Button("Button",function()
 end)
 
 Page:Button("Notification",function()
-	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 0.5, "rbxassetid://112969263935543")
+	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
