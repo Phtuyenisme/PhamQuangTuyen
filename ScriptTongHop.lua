@@ -253,7 +253,7 @@ function royxui:royxstart(text,logo)
 	focusui = false
 
 	if logo == nil then
-		logo = "110276830369206"
+		logo = 112969263935543
 	end
 
 	local MainSceen = Instance.new("Frame")
