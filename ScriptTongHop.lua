@@ -309,7 +309,7 @@ MinimizeButton.MouseButton1Click:Connect(function()
         MainSceen.Size = UDim2.new(0, 553, 0, 466)
     else
         -- Nếu UI đang hiện, thu nhỏ
-        MainSceen.Size = UDim2.new(0, 553, 0, 100)
+        MainSceen.Size = UDim2.new(0, 553, 0, 50)
     end
     isMinimized = not isMinimized
 end)
