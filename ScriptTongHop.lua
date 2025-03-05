@@ -327,6 +327,83 @@ ToggleButton.MouseButton1Click:Connect(function()
     end
 end)
 
+function royxui:NewNotification(title, message, duration, logo)
+    -- Nếu không có thời gian, mặc định là 3 giây
+    duration = duration or 3  
+    logo = logo or "rbxassetid://6031097225" -- Mặc định là icon thông báo
+
+    -- Tạo khung thông báo
+    local NotiFrame = Instance.new("Frame")
+    NotiFrame.Parent = Royx
+    NotiFrame.AnchorPoint = Vector2.new(1, 0) -- Gắn vào mép phải
+    NotiFrame.Position = UDim2.new(1, -20, 0.05, 0) -- Cách mép phải 20px
+    NotiFrame.Size = UDim2.new(0, 260, 0, 70)
+    NotiFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    NotiFrame.BackgroundTransparency = 0.2
+    NotiFrame.BorderSizePixel = 0
+    NotiFrame.ClipsDescendants = true
+    NotiFrame.ZIndex = 10
+
+    -- Bo góc
+    local NotiCorner = Instance.new("UICorner")
+    NotiCorner.CornerRadius = UDim.new(0, 8)
+    NotiCorner.Parent = NotiFrame
+
+    -- Viền ngoài
+    local NotiStroke = Instance.new("UIStroke")
+    NotiStroke.Parent = NotiFrame
+    NotiStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    NotiStroke.Thickness = 1.5
+    NotiStroke.Color = Color3.fromRGB(85, 170, 255) -- Màu xanh dương
+
+    -- **Thêm logo**
+    local NotiLogo = Instance.new("ImageLabel")
+    NotiLogo.Parent = NotiFrame
+    NotiLogo.Size = UDim2.new(0, 40, 0, 40)
+    NotiLogo.Position = UDim2.new(0, 10, 0, 15) -- Nằm bên trái
+    NotiLogo.BackgroundTransparency = 1
+    NotiLogo.Image = logo
+    NotiLogo.ScaleType = Enum.ScaleType.Fit
+
+    -- Tiêu đề
+    local TitleLabel = Instance.new("TextLabel")
+    TitleLabel.Parent = NotiFrame
+    TitleLabel.Size = UDim2.new(1, -60, 0, 25)
+    TitleLabel.Position = UDim2.new(0, 60, 0, 5) -- Để chừa chỗ cho logo
+    TitleLabel.BackgroundTransparency = 1
+    TitleLabel.Text = title
+    TitleLabel.Font = Enum.Font.GothamBold
+    TitleLabel.TextSize = 16
+    TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+    -- Nội dung
+    local MessageLabel = Instance.new("TextLabel")
+    MessageLabel.Parent = NotiFrame
+    MessageLabel.Size = UDim2.new(1, -60, 0, 30)
+    MessageLabel.Position = UDim2.new(0, 60, 0, 30)
+    MessageLabel.BackgroundTransparency = 1
+    MessageLabel.Text = message
+    MessageLabel.Font = Enum.Font.Gotham
+    MessageLabel.TextSize = 14
+    MessageLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+    MessageLabel.TextWrapped = true
+    MessageLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+    -- Hiệu ứng xuất hiện
+    NotiFrame.Position = UDim2.new(1.2, 0, 0.05, 0)
+    local Tween = TweenService:Create(NotiFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(1, -20, 0.05, 0)})
+    Tween:Play()
+
+    -- Đợi `duration` giây rồi biến mất
+    task.delay(duration, function()
+        local HideTween = TweenService:Create(NotiFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(1.2, 0, 0.05, 0)})
+        HideTween:Play()
+        HideTween.Completed:Wait()
+        NotiFrame:Destroy()
+    end)
+end
+
 	local Main_UiConner = Instance.new("UICorner")
 
 	Main_UiConner.CornerRadius = UDim.new(0, 9)
@@ -2654,5 +2731,5 @@ Page:Button("Button",function()
 end)
 
 Page:Button("Notification",function()
-	royxui:Notification("Notification","Royx",5)
+	royxui:NewNotification("Phtuyen", "TuongVyy", 4, "rbxassetid://6031280882")
 end)
