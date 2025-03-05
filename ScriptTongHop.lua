@@ -268,6 +268,26 @@ function royxui:royxstart(text,logo)
 	MainSceen.Size = UDim2.new(0, 553, 0, 466)
 	MainSceen.ClipsDescendants = true
 
+local CloseButton = Instance.new("TextButton")
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = MainSceen
+CloseButton.AnchorPoint = Vector2.new(1, 0) -- Gắn nút vào góc phải trên
+CloseButton.Position = UDim2.new(1, -10, 0, 10) -- Đặt vị trí
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Text = "X"
+CloseButton.TextSize = 18
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+local CloseCorner = Instance.new("UICorner")
+CloseCorner.CornerRadius = UDim.new(0, 6)
+CloseCorner.Parent = CloseButton
+
+CloseButton.MouseButton1Click:Connect(function()
+    Royx:Destroy()
+end)
+
 	local Main_UiConner = Instance.new("UICorner")
 
 	Main_UiConner.CornerRadius = UDim.new(0, 9)
