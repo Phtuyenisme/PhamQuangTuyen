@@ -2746,4 +2746,30 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	end
 	return Tabs
 end
+local function printSizeAndPosition(uiElement)
+    print("Trước khi chuyển đổi:")
+    print(uiElement.Name .. " - Size: " .. tostring(uiElement.Size))
+    print(uiElement.Name .. " - Position: " .. tostring(uiElement.Position))
+end
+
+local function convertOffsetToScale(guiObject)
+    if guiObject.Parent and guiObject.Parent.AbsoluteSize then
+        local parentSize = guiObject.Parent.AbsoluteSize
+
+        printSizeAndPosition(guiObject) -- In ra trước khi đổi
+
+        guiObject.Size = UDim2.new(
+            guiObject.Size.X.Offset / parentSize.X, 0,
+            guiObject.Size.Y.Offset / parentSize.Y, 0
+        )
+        guiObject.Position = UDim2.new(
+            guiObject.Position.X.Offset / parentSize.X, 0,
+            guiObject.Position.Y.Offset / parentSize.Y, 0
+        )
+
+        print("Sau khi chuyển đổi:")
+        print(guiObject.Name .. " - Size: " .. tostring(guiObject.Size))
+        print(guiObject.Name .. " - Position: " .. tostring(guiObject.Position))
+    end
+end
 return Flux
