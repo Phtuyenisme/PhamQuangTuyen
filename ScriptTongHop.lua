@@ -691,7 +691,7 @@ function royxui:royxstart(text,logo)
 
 	function royxtabui:royxtab(text,logo)
 		if logo == nil then
-			logo = 8543527952
+			logo = 112969263935543
 		end
 		PageOrders = PageOrders + 1
 
