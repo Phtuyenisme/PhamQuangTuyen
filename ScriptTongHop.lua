@@ -265,8 +265,7 @@ function royxui:royxstart(text,logo)
 	MainSceen.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 	MainSceen.BorderColor3 = Color3.fromRGB(10, 10, 10)
 	MainSceen.Position = UDim2.new(0.483071834, 0, 0.437730134, 0)
-	MainSceen.Size = UDim2.new(0, 400, 0, 320)  
-
+	MainSceen.Size = UDim2.new(0, 553, 0, 466)
 	MainSceen.ClipsDescendants = true
 
 local CloseButton = Instance.new("TextButton")
@@ -274,7 +273,7 @@ CloseButton.Name = "CloseButton"
 CloseButton.Parent = MainSceen
 CloseButton.AnchorPoint = Vector2.new(1, 0) -- Gắn nút vào góc phải trên
 CloseButton.Position = UDim2.new(1, -10, 0, 10) -- Đặt vị trí
-CloseButton.Size = UDim2.new(0, 24, 0, 24)
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
 CloseButton.Font = Enum.Font.GothamBold
 CloseButton.Text = "X"
@@ -294,7 +293,7 @@ local ToggleButton = Instance.new("TextButton")
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Royx
 ToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Góc trên bên trái
-ToggleButton.Size = UDim2.new(0, 40, 0, 40) -- Kích thước hình tròn
+ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- Kích thước hình tròn
 ToggleButton.BackgroundColor3 = Color3.fromRGB(85, 170, 255) -- Màu xanh dương
 ToggleButton.Text = ""
 ToggleButton.AutoButtonColor = false
@@ -386,7 +385,7 @@ function royxui:NewNotification(title, message, duration, logo)
     MessageLabel.BackgroundTransparency = 1
     MessageLabel.Text = message
     MessageLabel.Font = Enum.Font.Gotham
-    MessageLabel.TextSize = 12
+    MessageLabel.TextSize = 14
     MessageLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
     MessageLabel.TextWrapped = true
     MessageLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -730,7 +729,7 @@ end
 	Line1.BorderColor3 = Color3.fromRGB(33, 35, 38)
 	Line1.BorderSizePixel = 0
 	Line1.Position = UDim2.new(0, 0, 0.100000016, 0)
-	Line1.Size = UDim2.new(0, 400, 0, 1)
+	Line1.Size = UDim2.new(0, 553, 0, 1)
 
 	local Line1_2 = Instance.new("Frame")
 
@@ -752,7 +751,7 @@ end
 	MainSceen2.BackgroundTransparency = 1.000
 	MainSceen2.BorderSizePixel = 0
 	MainSceen2.Position = UDim2.new(0.61414808, 0, 0.551475704, 0)
-	MainSceen2.Size = UDim2.new(0, 320, 0, 300)
+	MainSceen2.Size = UDim2.new(0, 426, 0, 418)
 
 	local ScolTapBarFrame = Instance.new("Frame")
 
@@ -786,7 +785,7 @@ end
 	UIListLayout_Menubar.Name = "UIListLayout_Menubar"
 	UIListLayout_Menubar.Parent = ScrollingFrame_Menubar
 	UIListLayout_Menubar.SortOrder = Enum.SortOrder.LayoutOrder
-	UIListLayout_Menubar.Padding = UDim.new(0, 15)
+	UIListLayout_Menubar.Padding = UDim.new(0, 25)
 
 	UIPadding_Menubar.Name = "UIPadding_Menubar"
 	UIPadding_Menubar.Parent = ScrollingFrame_Menubar
@@ -803,7 +802,7 @@ end
 	Container_Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Container_Page.BackgroundTransparency = 1.000
 	Container_Page.Position = UDim2.new(0.485153705, 0, 0.499208599, 0)
-	Container_Page.Size = UDim2.new(0, 330, 0, 280)
+	Container_Page.Size = UDim2.new(0, 439, 0, 417)
 	Container_Page.ClipsDescendants = true
 
 	local pagesFolder = Instance.new("Folder")
@@ -841,7 +840,7 @@ end
 		Frame_Tap.Active = true
 		Frame_Tap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Frame_Tap.BackgroundTransparency = 1.000
-		Frame_Tap.Size = UDim2.new(0, 60, 0, 20)
+		Frame_Tap.Size = UDim2.new(0, 70, 0, 24)
 
 		local TextButton_Tap = Instance.new("TextButton")
 
@@ -850,7 +849,7 @@ end
 		TextButton_Tap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextButton_Tap.BackgroundTransparency = 1.000
 		TextButton_Tap.Position = UDim2.new(0.114666745, 0, 0.100000381, 0)
-		TextButton_Tap.Size = UDim2.new(0, 55, 0, 18)
+		TextButton_Tap.Size = UDim2.new(0, 66, 0, 20)
 		TextButton_Tap.Font = Enum.Font.Gotham
 		TextButton_Tap.Text = tostring(text)
 		TextButton_Tap.TextColor3 = Color3.fromRGB(255,255,255)
@@ -1091,7 +1090,7 @@ end
 				ButtonMain.BorderSizePixel = 0
 				ButtonMain.AnchorPoint = Vector2.new(0.5, 0.5)
 				ButtonMain.Position = UDim2.new(0.5, 0, 0.5, 0)
-				ButtonMain.Size = UDim2.new(0, 320, 0, 22)
+				ButtonMain.Size = UDim2.new(0, 397, 0, 27)
 				ButtonMain.AutoButtonColor = false
 				ButtonMain.Font = Enum.Font.GothamSemibold
 				ButtonMain.TextColor3 = Color3.fromRGB(255, 255, 255)
