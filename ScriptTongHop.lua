@@ -366,7 +366,7 @@ end)
 	NotiFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 	NotiFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NotiFrame.BackgroundTransparency = 1
-	NotiFrame.Position = UDim2.new(0.9, 0, 0.05, 0)
+	NotiFrame.Position = UDim2.new(1.2, 0, 0.0613496937, 0)
 	NotiFrame.Size = UDim2.new(0, 1632, 0, 100)
 
 	local Notilistlayout = Instance.new("UIListLayout")
