@@ -335,8 +335,8 @@ function royxui:NewNotification(title, message, duration, logo)
     -- Tạo khung thông báo
     local NotiFrame = Instance.new("Frame")
     NotiFrame.Parent = Royx
-    NotiFrame.AnchorPoint = Vector2.new(1, 0) -- Gắn vào mép phải
-    NotiFrame.Position = UDim2.new(1, -20, 0.05, 0) -- Cách mép phải 20px
+    NotiFrame.AnchorPoint = Vector2.new(1, 1) -- Gắn vào mép phải
+    NotiFrame.Position = UDim2.new(1, -20, 1, -20) -- Cách mép phải 20px
     NotiFrame.Size = UDim2.new(0, 260, 0, 70)
     NotiFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
     NotiFrame.BackgroundTransparency = 0.2
