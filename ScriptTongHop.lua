@@ -2732,5 +2732,5 @@ Page:Button("Button",function()
 end)
 
 Page:Button("Notification",function()
-	royxui:NewNotification("Phtuyen", "TuongVyy", 4, "rbxassetid://112969263935543")
+	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 0.5, "rbxassetid://112969263935543")
 end)
