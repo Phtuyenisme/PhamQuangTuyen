@@ -12,7 +12,7 @@ FluxLib.Name = "FluxLib"
 FluxLib.Parent = game.CoreGui
 FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
--- Responsive Main UI
+-- Main UI for Mobile
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = FluxLib
@@ -20,10 +20,10 @@ MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(50, 53, 59)
 MainFrame.ClipsDescendants = true
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-MainFrame.Size = UDim2.new(0.9, 0, 0.9, 0) -- Adjusted for mobile
+MainFrame.Size = UDim2.new(0.9, 0, 0.9, 0) 
 
 local MainCorner = Instance.new("UICorner")
-MainCorner.CornerRadius = UDim.new(0, 10) -- Rounded corners
+MainCorner.CornerRadius = UDim.new(0, 10)
 MainCorner.Parent = MainFrame
 
 -- Close Button for Mobile
@@ -38,7 +38,48 @@ CloseButton.MouseButton1Click:Connect(function()
     MainFrame.Visible = not MainFrame.Visible
 end)
 
--- Draggable Support for Mobile
+-- Tabs UI
+local TabHolder = Instance.new("Frame")
+TabHolder.Name = "TabHolder"
+TabHolder.Parent = MainFrame
+TabHolder.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+TabHolder.Size = UDim2.new(0.25, 0, 1, 0)
+
+local TabLayout = Instance.new("UIListLayout")
+TabLayout.Parent = TabHolder
+TabLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+local Tabs = {}
+
+function Flux:CreateTab(name)
+    local TabButton = Instance.new("TextButton")
+    TabButton.Name = name
+    TabButton.Parent = TabHolder
+    TabButton.Size = UDim2.new(1, 0, 0.1, 0)
+    TabButton.BackgroundColor3 = Color3.fromRGB(66, 134, 255)
+    TabButton.Text = name
+    TabButton.TextScaled = true
+
+    local TabFrame = Instance.new("Frame")
+    TabFrame.Name = name .. "Frame"
+    TabFrame.Parent = MainFrame
+    TabFrame.Size = UDim2.new(0.75, 0, 1, 0)
+    TabFrame.Position = UDim2.new(0.25, 0, 0, 0)
+    TabFrame.Visible = false
+
+    Tabs[name] = TabFrame
+
+    TabButton.MouseButton1Click:Connect(function()
+        for _, tab in pairs(Tabs) do
+            tab.Visible = false
+        end
+        TabFrame.Visible = true
+    end)
+
+    return TabFrame
+end
+
+-- Draggable UI for Mobile
 local function MakeDraggable(topbarobject, object)
     local Dragging, DragInput, DragStart, StartPosition
 
@@ -76,7 +117,6 @@ local function MakeDraggable(topbarobject, object)
     end)
 end
 
--- Making the frame draggable
 MakeDraggable(MainFrame, MainFrame)
 
 return Flux
