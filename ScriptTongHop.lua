@@ -288,45 +288,6 @@ CloseButton.MouseButton1Click:Connect(function()
     Royx:Destroy()
 end)
 
--- Tạo nút hình tròn
-local ToggleButton = Instance.new("TextButton")
-ToggleButton.Name = "ToggleButton"
-ToggleButton.Parent = Royx
-ToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Góc trên bên trái
-ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- Kích thước hình tròn
-ToggleButton.BackgroundColor3 = Color3.fromRGB(85, 170, 255) -- Màu xanh dương
-ToggleButton.Text = ""
-ToggleButton.AutoButtonColor = false
-
--- Bo tròn nút
-local ToggleCorner = Instance.new("UICorner")
-ToggleCorner.CornerRadius = UDim.new(1, 0) -- Hình tròn hoàn toàn
-ToggleCorner.Parent = ToggleButton
-
--- Thêm icon cho nút
-local ToggleIcon = Instance.new("ImageLabel")
-ToggleIcon.Parent = ToggleButton
-ToggleIcon.Size = UDim2.new(0.6, 0, 0.6, 0) -- Kích thước icon
-ToggleIcon.Position = UDim2.new(0.2, 0, 0.2, 0) -- Canh giữa
-ToggleIcon.BackgroundTransparency = 1
-ToggleIcon.Image = "rbxassetid://6031068427" -- Icon hình con mắt (hoặc thay bằng icon bạn muốn)
-
--- Biến kiểm tra trạng thái hiển thị UI
-local isVisible = true
-
--- Sự kiện bấm nút để ẩn/hiện UI
-ToggleButton.MouseButton1Click:Connect(function()
-    isVisible = not isVisible
-    MainSceen.Visible = isVisible
-
-    -- Đổi icon để hiển thị trạng thái
-    if isVisible then
-        ToggleIcon.Image = "rbxassetid://6031068427" -- Con mắt mở
-    else
-        ToggleIcon.Image = "rbxassetid://6031068433" -- Con mắt đóng
-    end
-end)
-
 	local Main_UiConner = Instance.new("UICorner")
 
 	Main_UiConner.CornerRadius = UDim.new(0, 9)
@@ -366,7 +327,7 @@ end)
 	NotiFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 	NotiFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NotiFrame.BackgroundTransparency = 1
-	NotiFrame.Position = UDim2.new(1.2, 0, 0.0613496937, 0)
+	NotiFrame.Position = UDim2.new(0.9, 0, 0.05, 0)
 	NotiFrame.Size = UDim2.new(0, 1632, 0, 100)
 
 	local Notilistlayout = Instance.new("UIListLayout")
