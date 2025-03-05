@@ -2589,7 +2589,10 @@ local Tab2 = Main:royxtab("Tab 2")
 local Page = Tab:royxpage("Auto Farm")
 
 Page:Label("Phtuyenisme")
-age:Image("rbxassetid://8543527952", "Logo", Vector2.new(50, 50))
+end)
+
+Page:Image("rbxassetid://8543527952", "Logo", Vector2.new(50, 50))
+end)
 
 Page:Button("Button",function()
 
