@@ -12,7 +12,7 @@ FluxLib.Name = "FluxLib"
 FluxLib.Parent = game.CoreGui
 FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
--- Main UI for Mobile
+-- Main UI
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = FluxLib
@@ -26,7 +26,7 @@ local MainCorner = Instance.new("UICorner")
 MainCorner.CornerRadius = UDim.new(0, 10)
 MainCorner.Parent = MainFrame
 
--- Close Button for Mobile
+-- Close Button
 local CloseButton = Instance.new("TextButton")
 CloseButton.Parent = MainFrame
 CloseButton.Size = UDim2.new(0.1, 0, 0.05, 0)
@@ -48,26 +48,37 @@ TabHolder.Size = UDim2.new(0.25, 0, 1, 0)
 local TabLayout = Instance.new("UIListLayout")
 TabLayout.Parent = TabHolder
 TabLayout.SortOrder = Enum.SortOrder.LayoutOrder
+TabLayout.Padding = UDim.new(0, 5) -- Ensure tabs are spaced properly
 
 local Tabs = {}
+local TabButtons = {}
 
 function Flux:CreateTab(name)
     local TabButton = Instance.new("TextButton")
-    TabButton.Name = name
+    TabButton.Name = name .. "Button"
     TabButton.Parent = TabHolder
     TabButton.Size = UDim2.new(1, 0, 0.1, 0)
     TabButton.BackgroundColor3 = Color3.fromRGB(66, 134, 255)
     TabButton.Text = name
     TabButton.TextScaled = true
 
-    local TabFrame = Instance.new("Frame")
+    local TabFrame = Instance.new("ScrollingFrame")
     TabFrame.Name = name .. "Frame"
     TabFrame.Parent = MainFrame
     TabFrame.Size = UDim2.new(0.75, 0, 1, 0)
     TabFrame.Position = UDim2.new(0.25, 0, 0, 0)
+    TabFrame.BackgroundTransparency = 1
+    TabFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+    TabFrame.ScrollBarThickness = 5
     TabFrame.Visible = false
 
+    local TabLayout = Instance.new("UIListLayout")
+    TabLayout.Parent = TabFrame
+    TabLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    TabLayout.Padding = UDim.new(0, 10)
+
     Tabs[name] = TabFrame
+    TabButtons[name] = TabButton
 
     TabButton.MouseButton1Click:Connect(function()
         for _, tab in pairs(Tabs) do
@@ -78,6 +89,13 @@ function Flux:CreateTab(name)
 
     return TabFrame
 end
+
+-- Ensure first tab is visible by default
+local FirstTab = Flux:CreateTab("Tab 1")
+FirstTab.Visible = true
+
+Flux:CreateTab("Tab 2")
+Flux:CreateTab("Tab 3")
 
 -- Draggable UI for Mobile
 local function MakeDraggable(topbarobject, object)
