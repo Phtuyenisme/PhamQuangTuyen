@@ -1,4 +1,4 @@
-local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/Phtuyenisme/PhamQuangTuyen/refs/heads/main/message.lua")()
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/Phtuyenisme/PhamQuangTuyen/refs/heads/main/message_mobile.lua")()
 
 local win = Flux:Window("PREVIEW", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
 local function printSizeAndPosition(uiElement)
