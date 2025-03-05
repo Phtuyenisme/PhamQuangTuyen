@@ -4,7 +4,7 @@ local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/Phtuyenis
 local Window = Flux:Window("Tên Cửa Sổ", "Mô tả", Color3.fromRGB(66, 134, 255), Enum.KeyCode.RightControl)
 
 -- Tạo một tab trong cửa sổ
-local Tab = Window:Tab("Tab 1", "rbxassetid://1234567890") -- Biểu tượng tab (có thể thay đổi)
+local Tab1 = Window:Tab("Tab 1", "rbxassetid://1234567890") -- Biểu tượng tab (có thể thay đổi)
 
 -- Tạo một nút trong tab
 Tab:Button("Nhấn vào đây", "Nút này có thể thực hiện một hành động", function()
