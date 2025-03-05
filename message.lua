@@ -118,7 +118,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = MainFrame
 	LeftFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-	LeftFrame.Size = UDim2.new(0, 205, 0, 484)
+	LeftFrame.Size = UDim2.new(0.2, 0, 1, 0)
 
 	LeftCorner.CornerRadius = UDim.new(0, 5)
 	LeftCorner.Name = "LeftCorner"
@@ -167,7 +167,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	TabHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TabHold.BackgroundTransparency = 1.000
 	TabHold.Position = UDim2.new(0, 0, 0.167355374, 0)
-	TabHold.Size = UDim2.new(0, 205, 0, 403)
+	TabHold.Size = UDim2.new(1, 0, 0.8, 0)
 
 	TabLayout.Name = "TabLayout"
 	TabLayout.Parent = TabHold
@@ -186,7 +186,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	
 	MakeDraggable(Drag,MainFrame)
 	MakeDraggable(LeftFrame,MainFrame)
-	MainFrame:TweenSize(UDim2.new(0, 400, 0, 250), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+	MainFrame:TweenSize(UDim2.new(0.5, 0, 0.5, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 	
 	local uitoggled = false
 	UserInputService.InputBegan:Connect(
@@ -198,7 +198,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 					wait(.5)
 					FluxLib.Enabled = false
 				else
-					MainFrame:TweenSize(UDim2.new(0, 400, 0, 250), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+					MainFrame:TweenSize(UDim2.new(0.5, 0, 0.5, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					FluxLib.Enabled = true
 					uitoggled = false
 				end
@@ -406,7 +406,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 		Tab.Parent = TabHold
 		Tab.BackgroundColor3 = PresetColor
 		Tab.BorderSizePixel = 0
-		Tab.Size = UDim2.new(0, 205, 0, 40)
+		Tab.Size = UDim2.new(1, 0, 0.1, 0)
 		Tab.AutoButtonColor = false
 		Tab.Font = Enum.Font.SourceSans
 		Tab.Text = ""
@@ -530,7 +530,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Button.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 			Button.ClipsDescendants = true
 			Button.Position = UDim2.new(0.370312512, 0, 0.552631557, 0)
-			Button.Size = UDim2.new(0, 457, 0, 43)
+			Button.Size = UDim2.new(0.9, 0, 0.1, 0)
 			Button.AutoButtonColor = false
 			Button.Font = Enum.Font.SourceSans
 			Button.Text = ""
@@ -753,7 +753,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Toggle.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 			Toggle.ClipsDescendants = true
 			Toggle.Position = UDim2.new(0.110937506, 0, 0.67653507, 0)
-			Toggle.Size = UDim2.new(0, 457, 0, 43)
+			Toggle.Size = UDim2.new(0.9, 0, 0.08, 0)
 			Toggle.AutoButtonColor = false
 			Toggle.Font = Enum.Font.SourceSans
 			Toggle.Text = ""
@@ -806,7 +806,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ToggleFrame.Parent = Circle
 			ToggleFrame.BackgroundColor3 = Color3.fromRGB(226, 227, 227)
 			ToggleFrame.Position = UDim2.new(33.0856934, 0, 0, 0)
-			ToggleFrame.Size = UDim2.new(0, 27, 0, 11)
+			ToggleFrame.Size = UDim2.new(0.2, 0, 0.5, 0)
 
 			ToggleFrameCorner.Name = "ToggleFrameCorner"
 			ToggleFrameCorner.Parent = ToggleFrame
@@ -816,7 +816,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ToggleCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ToggleCircle.Position = UDim2.new(0, 0, -0.272727281, 0)
 			ToggleCircle.Selectable = true
-			ToggleCircle.Size = UDim2.new(0, 17, 0, 17)
+			ToggleCircle.Size = UDim2.new(0.5, 0, 1, 0)
 
 			ToggleCircleCorner.CornerRadius = UDim.new(2, 8)
 			ToggleCircleCorner.Name = "ToggleCircleCorner"
@@ -1024,7 +1024,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Slider.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 			Slider.ClipsDescendants = true
 			Slider.Position = UDim2.new(0.189062506, 0, 0.648612201, 0)
-			Slider.Size = UDim2.new(0, 457, 0, 60)
+			Slider.Size = UDim2.new(0.9, 0, 0.1, 0)
 			Slider.AutoButtonColor = false
 			Slider.Font = Enum.Font.SourceSans
 			Slider.Text = ""
@@ -1093,20 +1093,20 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			SlideFrame.BackgroundColor3 = Color3.fromRGB(235, 234, 235)
 			SlideFrame.BorderSizePixel = 0
 			SlideFrame.Position = UDim2.new(-0.197140202, 0, 0.986091495, 0)
-			SlideFrame.Size = UDim2.new(0, 426, 0, 3)
+			SlideFrame.Size = UDim2.new(0.9, 0, 0.1, 0)
 
 			CurrentValueFrame.Name = "CurrentValueFrame"
 			CurrentValueFrame.Parent = SlideFrame
 			CurrentValueFrame.BackgroundColor3 = PresetColor
 			CurrentValueFrame.BorderSizePixel = 0
-			CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 3)
+			CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 1, 0)
 
 			SlideCircle.Name = "SlideCircle"
 			SlideCircle.Parent = SlideFrame
 			SlideCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			SlideCircle.BackgroundTransparency = 1.000
 			SlideCircle.Position = UDim2.new((start or 0)/max, -6,-1.30499995, 0)
-			SlideCircle.Size = UDim2.new(0, 11, 0, 11)
+			SlideCircle.Size = UDim2.new(0.03, 0, 0.8, 0)
 			SlideCircle.Image = "rbxassetid://3570695787"
 			SlideCircle.ImageColor3 = PresetColor
 
@@ -1319,7 +1319,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Dropdown.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 			Dropdown.ClipsDescendants = true
 			Dropdown.Position = UDim2.new(0.110937499, 0, 0.67653507, 0)
-			Dropdown.Size = UDim2.new(0, 457, 0, 43)
+			Dropdown.Size = UDim2.new(0.9, 0, 0.1, 0)
 			Dropdown.AutoButtonColor = false
 			Dropdown.Font = Enum.Font.SourceSans
 			Dropdown.Text = ""
@@ -1386,7 +1386,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			DropItemHolder.BackgroundTransparency = 1.000
 			DropItemHolder.BorderSizePixel = 0
 			DropItemHolder.Position = UDim2.new(-0.203539819, 0, 1.02380955, 0)
-			DropItemHolder.Size = UDim2.new(0, 436, 0, 82)
+			DropItemHolder.Size = UDim2.new(0.95, 0, 0.3, 0)
 			DropItemHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 			DropItemHolder.ScrollBarThickness = 5
 			DropItemHolder.ScrollBarImageColor3 = Color3.fromRGB(41, 42, 48)
@@ -1515,7 +1515,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Item.Parent = DropItemHolder
 			Item.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 			Item.ClipsDescendants = true
-			Item.Size = UDim2.new(0, 427, 0, 25)
+			Item.Size = UDim2.new(1, 0, 0.2, 0)
 			Item.AutoButtonColor = false
 			Item.Font = Enum.Font.Gotham
 			Item.Text = v
@@ -1607,7 +1607,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				Item.Parent = DropItemHolder
 				Item.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
 				Item.ClipsDescendants = true
-				Item.Size = UDim2.new(0, 427, 0, 25)
+				Item.Size = UDim2.new(1, 0, 0.2, 0)
 				Item.AutoButtonColor = false
 				Item.Font = Enum.Font.Gotham
 				Item.Text = addtext
@@ -1937,7 +1937,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			Toggle.BackgroundTransparency = 1.000
 			Toggle.Position = UDim2.new(2.37430048, 0, 1.07157099, 0)
-			Toggle.Size = UDim2.new(0, 137, 0, 38)
+			Toggle.Size = UDim2.new(0.9, 0, 0.08, 0)
 			Toggle.Font = Enum.Font.Gotham
 			Toggle.Text = "Rainbow"
 			Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1949,7 +1949,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ToggleFrame.Parent = Toggle
 			ToggleFrame.BackgroundColor3 = Color3.fromRGB(226, 227, 227)
 			ToggleFrame.Position = UDim2.new(0.778387249, 0, 0.357142866, 0)
-			ToggleFrame.Size = UDim2.new(0, 27, 0, 11)
+			ToggleFrame.Size = UDim2.new(0.2, 0, 0.5, 0)
 
 			ToggleFrameCorner.Name = "ToggleFrameCorner"
 			ToggleFrameCorner.Parent = ToggleFrame
@@ -1959,7 +1959,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ToggleCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ToggleCircle.Position = UDim2.new(0, 0, -0.273000002, 0)
 			ToggleCircle.Selectable = true
-			ToggleCircle.Size = UDim2.new(0, 17, 0, 17)
+			ToggleCircle.Size = UDim2.new(0.5, 0, 1, 0)
 
 			ToggleCircleCorner.CornerRadius = UDim.new(2, 8)
 			ToggleCircleCorner.Name = "ToggleCircleCorner"
