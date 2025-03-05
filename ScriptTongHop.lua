@@ -2589,7 +2589,6 @@ local Tab2 = Main:royxtab("Tab 2")
 local Page = Tab:royxpage("Auto Farm")
 
 Page:Label("Phtuyenisme")
-end)
 
 Page:Button("Button",function()
 
