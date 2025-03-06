@@ -2740,17 +2740,25 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme999")
+PageTab:Label("Phtuyenisme")
 
 --⛅️Button,Function
 
 --6💗💗💗💗
-PageTab6:Button("FaceBook:Quang Tuyên | Bấm để Sao Chép ",function()
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+PageTab6:Button("FaceBook:Quang Tuyên | Bấm Để Sao Chép!",function()
+Local FbUrl = "https://www.facebook.com/ten_fb_cua_ban"
+    setclipboard(FbUrl)
+    button.Text = "Đã sao chép!"
+    task.wait(1) -- Chờ 1 giây
+    button.Text = "FaceBook:Quang Tuyên | Bấm Để Sao Chép!"
 end)
 
-PageTab6:Button("AAAAAA",function()
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+PageTab6:Button("TikTok:pham.tuyen | Bấm Để Sao Chép!",function()
+Local TTUrl = "Tiktok"
+    setclipboard(TTUrl)
+    button.Text = "Đã sao chép!"
+    task.wait(1) -- Chờ 1 giây
+    button.Text = "FaceBook:Quang Tuyên | Bấm Để Sao Chép!"
 end)
 
 --1💗💗💗💗
