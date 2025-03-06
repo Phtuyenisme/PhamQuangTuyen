@@ -2714,6 +2714,8 @@ royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rb
 
 --⛅️Tab
 
+local Tab6 = Main:royxtab("⛄Main⛄️")
+
 local Tab = Main:royxtab("⛅Farm⛅️")
 
 local Tab2 = Main:royxtab("⛈Kaitun⛈")
@@ -2724,9 +2726,9 @@ local Tab4 = Main:royxtab("⚔PvP⚔️")
 
 local Tab5 = Main:royxtab("⛄Troll⛄️")
 
-local Tab6 = Main:royxtab("⛄Giới Thiệu⛄️")
-
 --⛅️Page
+
+local PageTab6 = Tab6:royxpage("⚡Thông tin cá nhân⚡️")
 
 local PageTab = Tab:royxpage("⚡Script Farm⚡️")
 
@@ -2738,11 +2740,19 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-local PageTab6 = Tab6:royxpage("⚡Thông tin cá nhân⚡️")
-
 PageTab:Label("Phtuyenisme000")
 
 --⛅️Button,Function
+
+--6💗💗💗💗
+PageTab6:Button("AAAAAA",function()
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+end)
+
+PageTab6:Button("AAAAAA",function()
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+end)
+
 --1💗💗💗💗
 PageTab:Button("Notification",function()
 	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
@@ -2909,13 +2919,4 @@ end)
 
 PageTab5:Button("Trade Scam",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/heads/main/kk",true))()
-end)
-
---6💗💗💗💗
-PageTab6:Button("AAAAAA",function()
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
-end)
-
-PageTab6:Button("AAAAAA",function()
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
