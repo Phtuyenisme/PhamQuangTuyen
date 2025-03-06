@@ -2800,7 +2800,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTON
 end)
 
 PageTab:Button("Volcano Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoNewUpdated.luau"))()
 end)
 
 PageTab:Button("RubuTV Hub",function()
