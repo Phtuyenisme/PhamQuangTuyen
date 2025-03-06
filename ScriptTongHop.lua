@@ -2713,6 +2713,62 @@ local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
 --⛅️Tab
+-- Tạo Tab "Giới Thiệu"
+local introTab = Main:royxtab("Giới Thiệu")
+
+-- Tạo Page trong tab "Giới Thiệu"
+local introPage = introTab:royxpage("Thông tin liên hệ")
+
+-- 📌 Tạo khung cho Facebook
+local fbFrame = introPage:frame()
+fbFrame.Size = UDim2.new(0, 420, 0, 140) -- Khung lớn hơn để chứa nội dung đẹp hơn
+fbFrame.Position = UDim2.new(0.5, -210, 0, 10) -- Căn giữa UI
+
+-- Tiêu đề Facebook (To hơn, in đậm, căn giữa)
+local fbTitle = introPage:label("📌 Facebook", fbFrame)
+fbTitle.TextSize = 18
+fbTitle.Font = Enum.Font.GothamBold
+fbTitle.TextColor3 = Color3.fromRGB(255, 170, 0) -- Màu nổi bật
+
+-- Mô tả Facebook (Nằm dưới tiêu đề, nhỏ hơn)
+local fbDescription = introPage:label("🔹 Đây là trang Facebook cá nhân của tôi.", fbFrame)
+fbDescription.TextSize = 14
+fbDescription.Position = UDim2.new(0, 10, 0, 30) -- Dịch xuống để không đè tiêu đề
+
+-- Nút mở Facebook
+introPage:button("🌐 Mở Facebook", function()
+    local fbUrl = "https://www.facebook.com/ten_fb_cua_ban"
+    setclipboard(fbUrl)
+    print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
+end, fbFrame)
+
+-- 📌 Đường kẻ phân cách
+local separator = introPage:label("────────────────────────────────────")
+separator.TextSize = 16 -- Cho đường kẻ đậm hơn
+
+-- 📌 Tạo khung cho Discord
+local discordFrame = introPage:frame()
+discordFrame.Size = UDim2.new(0, 420, 0, 140) -- Kích thước như Facebook
+discordFrame.Position = UDim2.new(0.5, -210, 0, 170) -- Đặt ngay dưới Facebook
+
+-- Tiêu đề Discord (Giống tiêu đề Facebook)
+local discordTitle = introPage:label("📌 Discord", discordFrame)
+discordTitle.TextSize = 18
+discordTitle.Font = Enum.Font.GothamBold
+discordTitle.TextColor3 = Color3.fromRGB(85, 170, 255) -- Màu xanh Discord
+
+-- Mô tả Discord (Nằm dưới tiêu đề)
+local discordDescription = introPage:label("🔹 Đây là tài khoản Discord chính của tôi.", discordFrame)
+discordDescription.TextSize = 14
+discordDescription.Position = UDim2.new(0, 10, 0, 30) -- Căn xuống để không đè tiêu đề
+
+-- Nút sao chép ID Discord
+introPage:button("📋 Sao chép ID Discord", function()
+    local discordID = "username#1234"
+    setclipboard(discordID)
+    print("Đã sao chép ID Discord vào clipboard: " .. discordID)
+end, discordFrame)
+
 local Tab = Main:royxtab("⛅Farm⛅️")
 
 local Tab2 = Main:royxtab("⛈Kaitun⛈")
