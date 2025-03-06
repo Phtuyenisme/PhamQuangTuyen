@@ -2761,7 +2761,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs
 end)
 
 PageTab:Button("Zis Roblox",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/giaotrinhhoc/ZisRb/refs/heads/main/ZisRbV5"))()
 end)
 
 PageTab:Button("Mukuro Hub",function()
