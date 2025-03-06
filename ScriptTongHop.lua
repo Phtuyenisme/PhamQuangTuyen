@@ -2743,19 +2743,21 @@ PageTab:Button("Notification",function()
 end)
 
 PageTab:Button("W-azure Hub",function()
-
+getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 end)
 
 PageTab:Button("Redz Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end)
 
 PageTab:Button("Min Gaming",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinME"))()
 end)
 
 PageTab:Button("Trẩu Roblox",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
 end)
 
 PageTab:Button("Zis Roblox",function()
@@ -2763,35 +2765,38 @@ PageTab:Button("Zis Roblox",function()
 end)
 
 PageTab:Button("Mukuro Hub",function()
-
+loadstring(game:HttpGet("https://auth.quartyz.com/scripts/Loader.lua"))()
 end)
 
 PageTab:Button("Alchemy Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/AlchemyHub/main/Main.lua"))({ "discord.gg/alchemyhub","x2neptune.tech/LoaderPromo",true,"BY:x2Neptune" })
 end)
 
 PageTab:Button("Raito Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
 end)
 
 PageTab:Button("Speed Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
 PageTab:Button("Teddy Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
 end)
 
 PageTab:Button("Xero Hub",function()
-
+getgenv().Team = "Pirates"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
 end)
 
 PageTab:Button("AstralV1 Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
 end)
 
 PageTab:Button("QuanTum Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
 end)
 
 PageTab:Button("Volcano Hub",function()
@@ -2799,170 +2804,27 @@ PageTab:Button("Volcano Hub",function()
 end)
 
 PageTab:Button("RubuTV Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
 end)
 
 PageTab:Button("BlueX Hub",function()
-
+_G.Team = "Pirates" 
+_G.FixLag = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 end)
 
 PageTab:Button("FrostWare Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("VxezeV2 Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubv2"))()
+end)
+
+PageTab:Button("Hiru Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
-
+PageTab:Button("BắpRed Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
 end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
-PageTab:Button("W-azure",function()
-
-end)
-
