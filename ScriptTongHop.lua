@@ -2822,7 +2822,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/ref
 end)
 
 PageTab:Button("Hiru Hub",function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Dev-Hiru/refs/heads/main/HiruHub.lua"))()
 end)
 
 PageTab:Button("BắpRed Hub",function()
