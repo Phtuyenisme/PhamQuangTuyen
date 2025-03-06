@@ -2738,9 +2738,22 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme001")
+PageTab:Label("Phtuyenisme002")
 
 --⛅️Button,Function
+--Giới thiệu💗💗💗💗
+introPage:button("🌐 Facebook: Nguyễn Văn A\n🔹 Đây là trang Facebook cá nhân của tôi.", function()
+    local fbUrl = "https://www.facebook.com/ten_fb_cua_ban"
+    setclipboard(fbUrl)
+    print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
+end)
+
+introPage:button("📋 Discord: username#1234\n🔹 Đây là tài khoản Discord chính của tôi.", function()
+    local discordID = "username#1234"
+    setclipboard(discordID)
+    print("Đã sao chép ID Discord vào clipboard: " .. discordID)
+end)
+
 --1💗💗💗💗
 PageTab:Button("Notification",function()
 	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
@@ -2910,15 +2923,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/
 end)
 
 -- 📌 Nút mở Facebook (Gồm cả tiêu đề & mô tả)
-introPage:button("🌐 Facebook: Nguyễn Văn A\n🔹 Đây là trang Facebook cá nhân của tôi.", function()
-    local fbUrl = "https://www.facebook.com/ten_fb_cua_ban"
-    setclipboard(fbUrl)
-    print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
-end)
+
 
 -- 📌 Nút sao chép ID Discord (Gồm cả tiêu đề & mô tả)
-introPage:button("📋 Discord: username#1234\n🔹 Đây là tài khoản Discord chính của tôi.", function()
-    local discordID = "username#1234"
-    setclipboard(discordID)
-    print("Đã sao chép ID Discord vào clipboard: " .. discordID)
-end)
