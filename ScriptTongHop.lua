@@ -2725,6 +2725,8 @@ local Tab4 = Main:royxtab("⚔PvP⚔️")
 
 local Tab5 = Main:royxtab("⛄Troll⛄️")
 
+local Tab6 = Main:royxtab("⛄Giới Thiệu⛄️")
+
 --⛅️Page
 local introPage = introTab:royxpage("Thông tin liên hệ")
 
@@ -2738,22 +2740,11 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme002")
+local PageTab6 = Tab6:royxpage("⚡Thông tin cá nhân⚡️")
+
+PageTab:Label("Phtuyenisme003")
 
 --⛅️Button,Function
---Giới thiệu💗💗💗💗
-introPage:button("🌐 Facebook: Nguyễn Văn A\n🔹 Đây là trang Facebook cá nhân của tôi.", function()
-    local fbUrl = "https://www.facebook.com/ten_fb_cua_ban"
-    setclipboard(fbUrl)
-    print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
-end)
-
-introPage:button("📋 Discord: username#1234\n🔹 Đây là tài khoản Discord chính của tôi.", function()
-    local discordID = "username#1234"
-    setclipboard(discordID)
-    print("Đã sao chép ID Discord vào clipboard: " .. discordID)
-end)
-
 --1💗💗💗💗
 PageTab:Button("Notification",function()
 	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
@@ -2922,7 +2913,11 @@ PageTab5:Button("Trade Scam",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/heads/main/kk",true))()
 end)
 
--- 📌 Nút mở Facebook (Gồm cả tiêu đề & mô tả)
+--6💗💗💗💗
+PageTab6:button("AAAAAA", function()
 
+end)
 
--- 📌 Nút sao chép ID Discord (Gồm cả tiêu đề & mô tả)
+PageTab6:button("AAAAAA", function()
+
+end)
