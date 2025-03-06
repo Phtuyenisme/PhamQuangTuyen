@@ -2740,7 +2740,7 @@ local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
 local PageTab6 = Tab6:royxpage("⚡Thông tin cá nhân⚡️")
 
-PageTab:Label("Phtuyenisme999")
+PageTab:Label("Phtuyenisme000")
 
 --⛅️Button,Function
 --1💗💗💗💗
