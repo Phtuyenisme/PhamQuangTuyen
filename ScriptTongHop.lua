@@ -2909,67 +2909,125 @@ PageTab5:Button("Trade Scam",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/heads/main/kk",true))()
 end)
 
+-- 📌 Tạo khung Facebook
 local fbFrame = Instance.new("Frame")
 fbFrame.Parent = introPage.Object -- 🔥 Gắn vào đúng `introPage.Object`
 fbFrame.Size = UDim2.new(0, 420, 0, 140)
-fbFrame.Position = UDim2.new(0.5, -210, 0, 10)
+fbFrame.Position = UDim2.new(0.5, -210, 0, 10) -- Đảm bảo nằm trong màn hình
 fbFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 fbFrame.BackgroundTransparency = 0.2
+fbFrame.BorderSizePixel = 0
 
 local fbCorner = Instance.new("UICorner")
 fbCorner.CornerRadius = UDim.new(0, 10)
 fbCorner.Parent = fbFrame
 
 -- 📌 Tiêu đề Facebook
-local fbTitle = introPage:label("📌 Facebook", fbFrame)
-fbTitle.TextSize = 18
+local fbTitle = Instance.new("TextLabel")
+fbTitle.Parent = fbFrame
+fbTitle.Size = UDim2.new(1, 0, 0, 30)
+fbTitle.Position = UDim2.new(0, 0, 0, 5)
+fbTitle.BackgroundTransparency = 1
+fbTitle.Text = "📌 Facebook: Nguyễn Văn A"
 fbTitle.Font = Enum.Font.GothamBold
+fbTitle.TextSize = 18
 fbTitle.TextColor3 = Color3.fromRGB(255, 170, 0)
-fbTitle.Position = UDim2.new(0, 10, 0, 5) -- Đặt đúng vị trí trong khung
 
 -- 📌 Mô tả Facebook
-local fbDescription = introPage:label("🔹 Đây là trang Facebook cá nhân của tôi.", fbFrame)
+local fbDescription = Instance.new("TextLabel")
+fbDescription.Parent = fbFrame
+fbDescription.Size = UDim2.new(1, -20, 0, 40)
+fbDescription.Position = UDim2.new(0, 10, 0, 40)
+fbDescription.BackgroundTransparency = 1
+fbDescription.Text = "🔹 Đây là trang Facebook cá nhân của tôi."
+fbDescription.Font = Enum.Font.Gotham
 fbDescription.TextSize = 14
-fbDescription.Position = UDim2.new(0, 10, 0, 30)
+fbDescription.TextColor3 = Color3.fromRGB(200, 200, 200)
+fbDescription.TextWrapped = true
+fbDescription.TextXAlignment = Enum.TextXAlignment.Left
 
 -- 📌 Nút mở Facebook
-local fbButton = introPage:button("🌐 Mở Facebook", function()
+local fbButton = Instance.new("TextButton")
+fbButton.Parent = fbFrame
+fbButton.Size = UDim2.new(0.6, 0, 0, 30)
+fbButton.Position = UDim2.new(0.2, 0, 0.75, 0)
+fbButton.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+fbButton.Font = Enum.Font.GothamBold
+fbButton.Text = "🌐 Mở Facebook"
+fbButton.TextSize = 14
+fbButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+local fbBtnCorner = Instance.new("UICorner")
+fbBtnCorner.CornerRadius = UDim.new(0, 6)
+fbBtnCorner.Parent = fbButton
+
+fbButton.MouseButton1Click:Connect(function()
     local fbUrl = "https://www.facebook.com/ten_fb_cua_ban"
     setclipboard(fbUrl)
     print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
-end, fbFrame)
+end)
 
 -- 📌 Đường kẻ phân cách
-local separator = introPage:label("────────────────────────────────────")
-separator.TextSize = 16
+local separator = Instance.new("Frame")
+separator.Parent = introPage.Object
+separator.Size = UDim2.new(0.9, 0, 0, 2)
+separator.Position = UDim2.new(0.05, 0, 0.45, 0)
+separator.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 
 -- 📌 Tạo khung Discord
 local discordFrame = Instance.new("Frame")
 discordFrame.Parent = introPage.Object -- 🔥 Gắn vào đúng `introPage.Object`
 discordFrame.Size = UDim2.new(0, 420, 0, 140)
-discordFrame.Position = UDim2.new(0.5, -210, 0, 170)
+discordFrame.Position = UDim2.new(0.5, -210, 0, 180)
 discordFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 discordFrame.BackgroundTransparency = 0.2
+discordFrame.BorderSizePixel = 0
 
 local discordCorner = Instance.new("UICorner")
 discordCorner.CornerRadius = UDim.new(0, 10)
 discordCorner.Parent = discordFrame
 
 -- 📌 Tiêu đề Discord
-local discordTitle = introPage:label("📌 Discord", discordFrame)
-discordTitle.TextSize = 18
+local discordTitle = Instance.new("TextLabel")
+discordTitle.Parent = discordFrame
+discordTitle.Size = UDim2.new(1, 0, 0, 30)
+discordTitle.Position = UDim2.new(0, 0, 0, 5)
+discordTitle.BackgroundTransparency = 1
+discordTitle.Text = "📌 Discord: username#1234"
 discordTitle.Font = Enum.Font.GothamBold
+discordTitle.TextSize = 18
 discordTitle.TextColor3 = Color3.fromRGB(85, 170, 255)
-discordTitle.Position = UDim2.new(0, 10, 0, 5)
 
 -- 📌 Mô tả Discord
-local discordDescription = introPage:label("🔹 Đây là tài khoản Discord chính của tôi.", discordFrame)
+local discordDescription = Instance.new("TextLabel")
+discordDescription.Parent = discordFrame
+discordDescription.Size = UDim2.new(1, -20, 0, 40)
+discordDescription.Position = UDim2.new(0, 10, 0, 40)
+discordDescription.BackgroundTransparency = 1
+discordDescription.Text = "🔹 Đây là tài khoản Discord chính của tôi."
+discordDescription.Font = Enum.Font.Gotham
 discordDescription.TextSize = 14
-discordDescription.Position = UDim2.new(0, 10, 0, 30)
+discordDescription.TextColor3 = Color3.fromRGB(200, 200, 200)
+discordDescription.TextWrapped = true
+discordDescription.TextXAlignment = Enum.TextXAlignment.Left
 
 -- 📌 Nút sao chép ID Discord
-local discordButton = introPage:button("📋 Sao chép ID Discord", function()
+local discordButton = Instance.new("TextButton")
+discordButton.Parent = discordFrame
+discordButton.Size = UDim2.new(0.6, 0, 0, 30)
+discordButton.Position = UDim2.new(0.2, 0, 0.75, 0)
+discordButton.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+discordButton.Font = Enum.Font.GothamBold
+discordButton.Text = "📋 Sao chép ID Discord"
+discordButton.TextSize = 14
+discordButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+local discordBtnCorner = Instance.new("UICorner")
+discordBtnCorner.CornerRadius = UDim.new(0, 6)
+discordBtnCorner.Parent = discordButton
+
+discordButton.MouseButton1Click:Connect(function()
     local discordID = "username#1234"
     setclipboard(discordID)
     print("Đã sao chép ID Discord vào clipboard: " .. discordID)
-end, discordFrame)
+end)
