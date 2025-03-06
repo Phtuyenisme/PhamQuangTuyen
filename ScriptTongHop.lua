@@ -2740,13 +2740,13 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme888")
+PageTab:Label("Phtuyenisme999")
 
 --⛅️Button,Function
 
 -- 📌 Hộp hiển thị tên Facebook (TextBox không chỉnh sửa)
 local fbBox = Instance.new("TextBox")
-fbBox.Parent = PageTab6.Object
+fbBox.Parent = PageTab6
 fbBox.Size = UDim2.new(0.8, 0, 0, 40) -- Kích thước
 fbBox.Position = UDim2.new(0.1, 0, 0.2, 0) -- Căn giữa trang
 fbBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Màu nền tối
