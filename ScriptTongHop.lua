@@ -2828,3 +2828,7 @@ end)
 PageTab:Button("BắpRed Hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
 end)
+
+PageTab:Button("Ak Gaming",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/binh99999yeuem/ak-gaming/refs/heads/main/ak%20gaming.txt"))()
+end)
