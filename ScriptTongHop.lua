@@ -288,6 +288,38 @@ CloseButton.MouseButton1Click:Connect(function()
     Royx:Destroy()
 end)
 
+local TweenService = game:GetService("TweenService")
+
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") -- Đặt ngoài UI chính
+ToggleButton.AnchorPoint = Vector2.new(0, 0) -- Gắn vào góc trên bên trái
+ToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Cách mép trái 10px, mép trên 10px
+ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- Kích thước ảnh
+ToggleButton.BackgroundTransparency = 1 -- Không có nền
+ToggleButton.Image = "rbxassetid://140362506923219" -- Thay YOUR_IMAGE_ID bằng ID ảnh của bạn
+ToggleButton.ScaleType = Enum.ScaleType.Fit -- Căn chỉnh ảnh phù hợp
+
+-- Bo góc để tạo hình tròn
+local ToggleCorner = Instance.new("UICorner")
+ToggleCorner.CornerRadius = UDim.new(1, 0) -- Làm cho nút tròn hoàn toàn
+ToggleCorner.Parent = ToggleButton
+
+local uiVisible = true
+local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out) -- Hiệu ứng mượt 0.5s
+
+ToggleButton.MouseButton1Click:Connect(function()
+    uiVisible = not uiVisible
+    
+    if uiVisible then
+        TweenService:Create(MainSceen, tweenInfo, {Size = UDim2.new(0, 553, 0, 466), BackgroundTransparency = 0}):Play()
+        ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI hiện
+    else
+        TweenService:Create(MainSceen, tweenInfo, {Size = UDim2.new(0, 0, 0, 0), BackgroundTransparency = 1}):Play()
+        ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI ẩn
+    end
+end)
+
 function royxui:NewNotification(title, message, duration, logo)
     -- Nếu không có thời gian, mặc định là 3 giây
     duration = duration or 3  
