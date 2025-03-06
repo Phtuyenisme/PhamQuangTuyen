@@ -2712,18 +2712,28 @@ end
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
-local Tab = Main:royxtab("Tab 1")
+--⛅️Tab
+local Tab = Main:royxtab("Farm⛅️")
 
-local Tab2 = Main:royxtab("Tab 2")
+local Tab2 = Main:royxtab("Kaitun⛅️")
 
-local Page = Tab:royxpage("Auto Farm")
+local Tab3 = Main:royxtab("Auto🤖")
 
-Page:Label("Phtuyenisme")
+local Tab4 = Main:royxtab("PvP⚔️")
 
-Page:Button("Button",function()
+local Tab5 = Main:royxtab("Troll⛄️")
 
+--⛅️Page
+local PageTab = Tab:royxpage("Auto Farm")
+
+PageTab:Label("Phtuyenisme")
+
+--⛅️Button,Function
+
+PageTab:Button("Notification",function()
+	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
-Page:Button("Notification",function()
-	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+PageTab:Button("W-azure",function()
+
 end)
