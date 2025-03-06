@@ -2744,23 +2744,6 @@ PageTab:Label("Phtuyenisme999")
 
 --⛅️Button,Function
 
--- 📌 Hộp hiển thị tên Facebook (TextBox không chỉnh sửa)
-local fbBox = Instance.new("TextBox")
-fbBox.Parent = PageTab6
-fbBox.Size = UDim2.new(0.8, 0, 0, 40) -- Kích thước
-fbBox.Position = UDim2.new(0.1, 0, 0.2, 0) -- Căn giữa trang
-fbBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Màu nền tối
-fbBox.TextColor3 = Color3.fromRGB(255, 255, 255) -- Chữ trắng
-fbBox.Text = "Nguyễn Văn A" -- Tên Facebook
-fbBox.Font = Enum.Font.Gotham
-fbBox.TextSize = 16
-fbBox.ClearTextOnFocus = false
-fbBox.TextEditable = false -- 🔥 Không cho chỉnh sửa
-
-local fbCorner = Instance.new("UICorner")
-fbCorner.CornerRadius = UDim.new(0, 6)
-fbCorner.Parent = fbBox
-
 --6💗💗💗💗
 PageTab6:Button("AAAAAA",function()
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
