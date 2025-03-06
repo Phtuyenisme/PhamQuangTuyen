@@ -2728,7 +2728,11 @@ local PageTab = Tab:royxpage("⚡Script Farm⚡️")
 
 local PageTab2 = Tab2:royxpage("⚡Script Kaitun⚡️")
 
-local PageTab3 = Tab3:royxpage("⚡Script Auto⚡️")
+local PageTab3 = Tab3:royxpage("⚡Auto Gạt cần⚡️")
+
+local PageTab31 = Tab3:royxpage("⚡Auto tam kiếm Zoro⚡️")
+
+local PageTab32 = Tab3:royxpage("⚡Auto Chest⚡️")
 
 local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
@@ -2737,7 +2741,7 @@ local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 PageTab:Label("Phtuyenisme")
 
 --⛅️Button,Function
-
+--1💗💗💗💗
 PageTab:Button("Notification",function()
 	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
@@ -2809,7 +2813,7 @@ end)
 
 PageTab:Button("BlueX Hub",function()
 _G.Team = "Pirates" 
-_G.FixLag = false
+_G.FixLag = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 end)
 
@@ -2831,4 +2835,40 @@ end)
 
 PageTab:Button("Ak Gaming",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/binh99999yeuem/ak-gaming/refs/heads/main/ak%20gaming.txt"))()
+end)
+
+--2💗💗💗💗
+PageTab2:Button("[Update]",function()
+	royxui:NewNotification("Đang Update ấn cái lồn:))", "⛅TuongVyy", 2, "rbxassetid://112969263935543")
+end)
+
+--3💗💗💗💗
+PageTab3:Button("Auto Mirage Island",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Mirage-Teddyreal-FREE"))()
+end)
+
+PageTab3:Button("Auto Boss",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
+end)
+
+PageTab3:Button("Boss + Mirage Island",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
+end)
+
+--3.1💗💗💗💗
+PageTab31:Button("AAAAAA",function()
+
+end)
+
+--3.2💗💗💗💗
+PageTab32:Button("Auto Chest [TpBypass,only one island]",function()
+  _G.Settings = { 
+    ["Enable Farm"] = true, 
+    ["SnipeLegendaryItem"] = true, 
+    ["Choose Team"] = "Marines", 
+    ["White Screen"] = false, 
+    ["Reset Anti Detect"] = true 
+} 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
 end)
