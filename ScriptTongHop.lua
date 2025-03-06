@@ -2713,7 +2713,6 @@ local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
 --⛅️Tab
-local introTab = Main:royxtab("Giới Thiệu")
 
 local Tab = Main:royxtab("⛅Farm⛅️")
 
@@ -2728,7 +2727,6 @@ local Tab5 = Main:royxtab("⛄Troll⛄️")
 local Tab6 = Main:royxtab("⛄Giới Thiệu⛄️")
 
 --⛅️Page
-local introPage = introTab:royxpage("Thông tin liên hệ")
 
 local PageTab = Tab:royxpage("⚡Script Farm⚡️")
 
@@ -2914,10 +2912,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/
 end)
 
 --6💗💗💗💗
-PageTab6:button("AAAAAA", function()
-
+PageTab6:button("AAAAAA",function()
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
-PageTab6:button("AAAAAA", function()
-
+PageTab6:button("AAAAAA",function()
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
