@@ -2841,7 +2841,7 @@ end)
 
 --2💗💗💗💗
 PageTab2:Button("[Update]",function()
-	royxui:NewNotification("Đang Update ấn cái lồn:))", "⛅TuongVyy", 2, "rbxassetid://112969263935543")
+	royxui:NewNotification("Đang Update ấn cái lồn:))", "⛅TuongVyy", 5, "rbxassetid://112969263935543")
 end)
 
 --3💗💗💗💗
@@ -2894,7 +2894,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanV
 end)
 
 PageTab4:Button("Auto Bounty",function()
-royxui:NewNotification("Tự tìm Đi tao k cho đâu Hahaa", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+royxui:NewNotification("Tự tìm Đi T K cho đâu Hahaa", "⛅TuongVyy", 5, "rbxassetid://112969263935543")
 end)
 
 --5💗💗💗💗
