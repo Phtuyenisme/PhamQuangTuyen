@@ -2730,13 +2730,7 @@ local PageTab2 = Tab2:royxpage("⚡Script Kaitun⚡️")
 
 local PageTab3 = Tab3:royxpage("⚡Auto Pull Lever⚡️")
 
-local PageTab31 = Tab3:royxpage("⚡Auto Sword⚡️")
-
-local PageTab32 = Tab3:royxpage("⚡Auto Chest⚡️")
-
 local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
-
-local PageTab41 = Tab4:royxpage("⚡Script FixLag⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
@@ -2840,7 +2834,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/binh99999yeuem/ak-gam
 end)
 
 --2💗💗💗💗
-PageTab2:Button("[Update]",function()
+PageTab2:Button("Kaitun SUPER VIP",function()
 	royxui:NewNotification("Đang Update ấn cái lồn:))", "⛅TuongVyy", 5, "rbxassetid://112969263935543")
 end)
 
@@ -2857,13 +2851,11 @@ PageTab3:Button("Boss + Mirage Island",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
 end)
 
---3.1💗💗💗💗
-PageTab31:Button("Auto Sword",function()
+PageTab3:Button("Auto Sword",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword"))()
 end)
 
---3.2💗💗💗💗
-PageTab32:Button("Auto Chest [TpBypass,only one island]",function()
+PageTab3:Button("Auto Chest [TpBypass,only one island]",function()
   _G.Settings = { 
     ["Enable Farm"] = true, 
     ["SnipeLegendaryItem"] = true, 
@@ -2875,16 +2867,15 @@ PageTab32:Button("Auto Chest [TpBypass,only one island]",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
 end)
 
---4.1💗💗💗💗
-PageTab41:Button("FixLag-TurboLite",function()
+--4💗💗💗💗
+PageTab4:Button("FixLag-TurboLite",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
 end)
 
-PageTab41:Button("FixLag-AkGaming",function()
+PageTab4:Button("FixLag-AkGaming",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
 end)
 
---4💗💗💗💗
 PageTab4:Button("Auto Aim [Dùng với HitBox để có Hiệu Quả tối hơn]",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
 end)
