@@ -817,6 +817,103 @@ end
 	MakeDraggable(ScrollingFrame_Menubar,MainSceen)
 
 	local royxtabui = {}
+-- Thêm tab "Giới Thiệu"
+local introTab = royxtabui:royxtab("Giới Thiệu") 
+
+-- Tạo trang trong tab "Giới Thiệu"
+local introPage = introTab:royxpage("Thông tin liên hệ")
+
+-- Hàm tạo khung chứa thông tin
+local function createInfoBox(parent, title, name, description, link)
+    local boxFrame = Instance.new("Frame")
+    boxFrame.Size = UDim2.new(1, 0, 0, 120)  
+    boxFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)  
+    boxFrame.Parent = parent.Object
+
+    local boxCorner = Instance.new("UICorner")
+    boxCorner.CornerRadius = UDim.new(0.1, 0)
+    boxCorner.Parent = boxFrame
+
+    local boxStroke = Instance.new("UIStroke")
+    boxStroke.Thickness = 2
+    boxStroke.Color = Color3.fromRGB(85, 170, 255)  
+    boxStroke.Parent = boxFrame
+
+    local titleLabel = Instance.new("TextLabel")
+    titleLabel.Text = title
+    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    titleLabel.TextSize = 16
+    titleLabel.Font = Enum.Font.GothamBold
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Size = UDim2.new(1, -10, 0.2, 0)
+    titleLabel.Position = UDim2.new(0, 5, 0, 5)
+    titleLabel.TextXAlignment = Enum.TextXAlignment.Left
+    titleLabel.Parent = boxFrame
+
+    local nameLabel = Instance.new("TextLabel")
+    nameLabel.Text = "Tên: " .. name
+    nameLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+    nameLabel.TextSize = 14
+    nameLabel.Font = Enum.Font.Gotham
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.Size = UDim2.new(1, -10, 0.2, 0)
+    nameLabel.Position = UDim2.new(0, 5, 0.2, 5)
+    nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+    nameLabel.Parent = boxFrame
+
+    local descLabel = Instance.new("TextLabel")
+    descLabel.Text = "Mô tả: " .. description
+    descLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+    descLabel.TextSize = 14
+    descLabel.Font = Enum.Font.Gotham
+    descLabel.BackgroundTransparency = 1
+    descLabel.Size = UDim2.new(1, -10, 0.4, 0)
+    descLabel.Position = UDim2.new(0, 5, 0.4, 5)
+    descLabel.TextWrapped = true
+    descLabel.TextXAlignment = Enum.TextXAlignment.Left
+    descLabel.Parent = boxFrame
+
+    local copyButton = Instance.new("TextButton")
+    copyButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+    copyButton.Position = UDim2.new(0.25, 0, 0.75, 0)
+    copyButton.BackgroundColor3 = Color3.fromRGB(70, 150, 255)
+    copyButton.Text = "📋 Sao chép link"
+    copyButton.TextScaled = true
+    copyButton.Font = Enum.Font.Gotham
+    copyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    copyButton.Parent = boxFrame
+
+    local copyButtonCorner = Instance.new("UICorner")
+    copyButtonCorner.CornerRadius = UDim.new(0.2, 0)
+    copyButtonCorner.Parent = copyButton
+
+    local copyButtonStroke = Instance.new("UIStroke")
+    copyButtonStroke.Thickness = 2
+    copyButtonStroke.Color = Color3.fromRGB(255, 255, 255)
+    copyButtonStroke.Parent = copyButton
+
+    copyButton.MouseButton1Click:Connect(function()
+        setclipboard(link)
+        print("Đã sao chép link: " .. link)
+
+        copyButton.Text = "✅ Đã sao chép!"
+        copyButton.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
+        wait(1)
+        copyButton.BackgroundColor3 = Color3.fromRGB(70, 150, 255)
+        copyButton.Text = "📋 Sao chép link"
+    end)
+end
+
+-- **Tạo khung Discord**
+createInfoBox(introPage, "🌐 Discord Community", "My Discord Server", 
+    "Tham gia để nhận hỗ trợ và cập nhật mới nhất.", "https://discord.com/invite/your-discord-link")
+
+-- Đường kẻ phân cách
+introPage:Line()
+
+-- **Tạo khung Facebook**
+createInfoBox(introPage, "📘 Facebook Page", "My Facebook Page", 
+    "Cập nhật tin tức, sự kiện và hỗ trợ người dùng.", "https://facebook.com/your-facebook-page")
 
 	function royxtabui:royxtab(text,logo)
 		if logo == nil then
@@ -2713,114 +2810,6 @@ local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
 --⛅️Tab
--- Tạo tab "Giới Thiệu"
-local introTab = royxtabui:royxtab("Giới Thiệu") 
-
--- Tạo trang trong tab Giới Thiệu
-local introPage = introTab:royxpage("Thông tin liên hệ")
-
--- Hàm tạo khung chứa thông tin
-local function createInfoBox(parent, title, name, description, link)
-    local boxFrame = Instance.new("Frame")
-    boxFrame.Size = UDim2.new(1, 0, 0, 120)  -- Điều chỉnh kích thước khung
-    boxFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)  -- Màu nền nhẹ
-    boxFrame.Parent = parent.Object
-
-    -- Bo góc
-    local boxCorner = Instance.new("UICorner")
-    boxCorner.CornerRadius = UDim.new(0.1, 0)
-    boxCorner.Parent = boxFrame
-
-    -- Viền ngoài
-    local boxStroke = Instance.new("UIStroke")
-    boxStroke.Thickness = 2
-    boxStroke.Color = Color3.fromRGB(85, 170, 255)  -- Màu viền xanh dương
-    boxStroke.Parent = boxFrame
-
-    -- **Tiêu đề**
-    local titleLabel = Instance.new("TextLabel")
-    titleLabel.Text = title
-    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    titleLabel.TextSize = 16
-    titleLabel.Font = Enum.Font.GothamBold
-    titleLabel.BackgroundTransparency = 1
-    titleLabel.Size = UDim2.new(1, -10, 0.2, 0)
-    titleLabel.Position = UDim2.new(0, 5, 0, 5)
-    titleLabel.TextXAlignment = Enum.TextXAlignment.Left
-    titleLabel.Parent = boxFrame
-
-    -- **Tên**
-    local nameLabel = Instance.new("TextLabel")
-    nameLabel.Text = "Tên: " .. name
-    nameLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-    nameLabel.TextSize = 14
-    nameLabel.Font = Enum.Font.Gotham
-    nameLabel.BackgroundTransparency = 1
-    nameLabel.Size = UDim2.new(1, -10, 0.2, 0)
-    nameLabel.Position = UDim2.new(0, 5, 0.2, 5)
-    nameLabel.TextXAlignment = Enum.TextXAlignment.Left
-    nameLabel.Parent = boxFrame
-
-    -- **Mô tả**
-    local descLabel = Instance.new("TextLabel")
-    descLabel.Text = "Mô tả: " .. description
-    descLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-    descLabel.TextSize = 14
-    descLabel.Font = Enum.Font.Gotham
-    descLabel.BackgroundTransparency = 1
-    descLabel.Size = UDim2.new(1, -10, 0.4, 0)
-    descLabel.Position = UDim2.new(0, 5, 0.4, 5)
-    descLabel.TextWrapped = true
-    descLabel.TextXAlignment = Enum.TextXAlignment.Left
-    descLabel.Parent = boxFrame
-
-    -- **Nút sao chép link**
-    local copyButton = Instance.new("TextButton")
-    copyButton.Size = UDim2.new(0.5, 0, 0.2, 0)
-    copyButton.Position = UDim2.new(0.25, 0, 0.75, 0)
-    copyButton.BackgroundColor3 = Color3.fromRGB(70, 150, 255)
-    copyButton.Text = "📋 Sao chép link"
-    copyButton.TextScaled = true
-    copyButton.Font = Enum.Font.Gotham
-    copyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-    copyButton.Parent = boxFrame
-
-    -- Bo góc cho nút
-    local copyButtonCorner = Instance.new("UICorner")
-    copyButtonCorner.CornerRadius = UDim.new(0.2, 0)
-    copyButtonCorner.Parent = copyButton
-
-    -- Viền cho nút
-    local copyButtonStroke = Instance.new("UIStroke")
-    copyButtonStroke.Thickness = 2
-    copyButtonStroke.Color = Color3.fromRGB(255, 255, 255)
-    copyButtonStroke.Parent = copyButton
-
-    -- Xử lý sao chép link
-    copyButton.MouseButton1Click:Connect(function()
-        setclipboard(link)
-        print("Đã sao chép link: " .. link)
-
-        -- Hiệu ứng đổi màu khi sao chép thành công
-        copyButton.Text = "✅ Đã sao chép!"
-        copyButton.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
-        wait(1)
-        copyButton.BackgroundColor3 = Color3.fromRGB(70, 150, 255)
-        copyButton.Text = "📋 Sao chép link"
-    end)
-end
-
--- **Tạo khung Discord**
-createInfoBox(introPage, "🌐 Discord Community", "My Awesome Discord Server", 
-    "Tham gia để nhận hỗ trợ và cập nhật mới nhất.", "https://discord.com/invite/your-discord-link")
-
--- Đường kẻ phân cách
-introPage:Line()
-
--- **Tạo khung Facebook**
-createInfoBox(introPage, "📘 Facebook Page", "My Awesome Facebook Page", 
-    "Cập nhật tin tức, sự kiện và hỗ trợ người dùng.", "https://facebook.com/your-facebook-page")
-
 local Tab = Main:royxtab("⛅Farm⛅️")
 
 local Tab2 = Main:royxtab("⛈Kaitun⛈")
