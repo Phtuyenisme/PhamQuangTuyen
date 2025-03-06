@@ -2912,10 +2912,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/
 end)
 
 --6💗💗💗💗
-PageTab6:button("AAAAAA",function()
+PageTab6:Button("AAAAAA",function()
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
-PageTab6:button("AAAAAA",function()
+PageTab6:Button("AAAAAA",function()
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
