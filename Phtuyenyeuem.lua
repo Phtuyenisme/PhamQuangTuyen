@@ -42,7 +42,7 @@ button.BackgroundColor3 = Color3.fromRGB(70, 150, 255) -- Màu xanh nhẹ hơn
 button.Text = "Lấy Script"
 button.TextScaled = true
 button.Font = Enum.Font.Gotham
-button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.TextColor3 = Color3.fromRGB(255, 255, 0)
 button.Parent = frame
 
 -- Bo góc cho Button
