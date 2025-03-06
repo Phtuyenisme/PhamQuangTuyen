@@ -316,7 +316,7 @@ ToggleButton.MouseButton1Click:Connect(function()
         ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI hiện
     else
         TweenService:Create(MainSceen, tweenInfo, {Size = UDim2.new(0, 0, 0, 0), BackgroundTransparency = 1}):Play()
-        ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI ẩn (thay ID ảnh khác)
+        ToggleButton.Image = "rbxassetid://85869640895047" -- Ảnh khi UI ẩn (thay ID ảnh khác)
     end
 end)
 
@@ -820,7 +820,7 @@ end
 
 	function royxtabui:royxtab(text,logo)
 		if logo == nil then
-			logo = 112969263935543
+			logo = 129496540666046
 		end
 		PageOrders = PageOrders + 1
 
