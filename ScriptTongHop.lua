@@ -2712,8 +2712,8 @@ end
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
-local scriptContent = "https://pastefy.app/kKNDHuBV/raw"
-local scriptContent1 = "https://pastefy.app/kKNDHuBV/raw"
+local scriptContent = "Facebook"
+local scriptContent1 = "Tiktok"
 --⛅️Tab
 
 local Tab6 = Main:royxtab("⛄Main⛄️")
@@ -2742,16 +2742,18 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme999")
+PageTab:Label("Phtuyenisme")
 
 --⛅️Button,Function
 
 --6💗💗💗💗
 PageTab6:Button("FaceBook:Quang Tuyên | Bấm Để Sao Chép!",function()
+setclipboard(scriptContent)
 royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
 PageTab6:Button("TikTok:pham.tuyen | Bấm Để Sao Chép!",function()
+setclipboard(scriptContent1)
 royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
