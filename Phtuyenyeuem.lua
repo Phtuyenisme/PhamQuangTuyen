@@ -3,10 +3,10 @@ local player = Players.LocalPlayer
 local gui = Instance.new("ScreenGui")
 gui.Parent = player:WaitForChild("PlayerGui")
 
--- Tạo Frame chính
+-- Tạo Frame chính (LỚN HƠN)
 local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0.4, 0, 0.2, 0)
-frame.Position = UDim2.new(0.3, 0, 0.4, 0)
+frame.Size = UDim2.new(0.5, 0, 0.25, 0) -- 50% chiều rộng, 25% chiều cao
+frame.Position = UDim2.new(0.25, 0, 0.375, 0) -- Canh giữa màn hình
 frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 frame.BackgroundTransparency = 0.2
 frame.Parent = gui
@@ -22,9 +22,9 @@ stroke.Thickness = 2
 stroke.Color = Color3.fromRGB(255, 255, 255)
 stroke.Parent = frame
 
--- Tạo Label hiển thị nội dung thông báo
+-- Tạo Label hiển thị nội dung thông báo (TO HƠN)
 local label = Instance.new("TextLabel")
-label.Size = UDim2.new(1, -20, 0.6, 0)
+label.Size = UDim2.new(1, -20, 0.65, 0)
 label.Position = UDim2.new(0, 10, 0, 10)
 label.BackgroundTransparency = 1
 label.Text = "Script đã được Update!\nVui lòng ấn vào nút 'Lấy Script' để sử dụng tiếp."
@@ -34,11 +34,11 @@ label.Font = Enum.Font.Gotham
 label.TextWrapped = true
 label.Parent = frame
 
--- Tạo Nút "Lấy Script"
+-- Tạo Nút "Lấy Script" (MÀU NHẸ HƠN)
 local button = Instance.new("TextButton")
-button.Size = UDim2.new(0.5, 0, 0.25, 0)
-button.Position = UDim2.new(0.25, 0, 0.7, 0)
-button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+button.Size = UDim2.new(0.5, 0, 0.2, 0)
+button.Position = UDim2.new(0.25, 0, 0.75, 0)
+button.BackgroundColor3 = Color3.fromRGB(70, 150, 255) -- Màu xanh nhẹ hơn
 button.Text = "Lấy Script"
 button.TextScaled = true
 button.Font = Enum.Font.Gotham
@@ -58,20 +58,20 @@ buttonStroke.Parent = button
 
 -- Nội dung Script cần Copy
 local scriptContent = [[
-print("Script đã được cập nhật!")
+Lồn
 ]]
 
 -- Xử lý khi nhấn nút
 button.MouseButton1Click:Connect(function()
-    -- Coppy nội dung vào clipboard
+    -- Sao chép nội dung vào clipboard
     setclipboard(scriptContent)
     
-    -- Thay đổi nội dung nút để báo đã copy thành công
+    -- Đổi nội dung nút để báo đã copy thành công
     button.Text = "Đã Copy!"
     
     -- Hiệu ứng đổi màu trong 1 giây rồi đổi lại
     button.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
     wait(1)
-    button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+    button.BackgroundColor3 = Color3.fromRGB(70, 150, 255) -- Quay lại màu cũ
     button.Text = "Lấy Script"
 end)
