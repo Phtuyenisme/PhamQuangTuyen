@@ -1,3 +1,5 @@
+local royxui
+
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
