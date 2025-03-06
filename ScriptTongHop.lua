@@ -2738,7 +2738,7 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme")
+PageTab:Label("Phtuyenisme001")
 
 --⛅️Button,Function
 --1💗💗💗💗
@@ -2915,10 +2915,6 @@ introPage:button("🌐 Facebook: Nguyễn Văn A\n🔹 Đây là trang Facebook 
     setclipboard(fbUrl)
     print("Đã sao chép link Facebook vào clipboard: " .. fbUrl)
 end)
-
--- 📌 Đường kẻ phân cách
-local separator = introPage:label("────────────────────────────────────")
-separator.TextSize = 16
 
 -- 📌 Nút sao chép ID Discord (Gồm cả tiêu đề & mô tả)
 introPage:button("📋 Discord: username#1234\n🔹 Đây là tài khoản Discord chính của tôi.", function()
