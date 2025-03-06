@@ -3,7 +3,7 @@ local player = Players.LocalPlayer
 local gui = Instance.new("ScreenGui")
 gui.Parent = player:WaitForChild("PlayerGui")
 
--- Tạo Frame chính (LỚN HƠN)
+-- Tạo Frame chính
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0.5, 0, 0.25, 0) -- 50% chiều rộng, 25% chiều cao
 frame.Position = UDim2.new(0.25, 0, 0.375, 0) -- Canh giữa màn hình
@@ -22,19 +22,19 @@ stroke.Thickness = 2
 stroke.Color = Color3.fromRGB(255, 255, 255)
 stroke.Parent = frame
 
--- Tạo Label hiển thị nội dung thông báo (TO HƠN)
+-- Tạo Label hiển thị nội dung thông báo
 local label = Instance.new("TextLabel")
 label.Size = UDim2.new(1, -20, 0.65, 0)
 label.Position = UDim2.new(0, 10, 0, 10)
 label.BackgroundTransparency = 1
-label.Text = "Script đã được Update!\nVui lòng ấn vào nút 'Lấy Script' để sử dụng tiếp."
+label.Text = "Đã có Script mới!\nẤn vào nút 'Lấy Script' rồi dán vào Google để tiếp tục sử dụng."
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextScaled = true
 label.Font = Enum.Font.Gotham
 label.TextWrapped = true
 label.Parent = frame
 
--- Tạo Nút "Lấy Script" (MÀU NHẸ HƠN)
+-- Tạo Nút "Lấy Script"
 local button = Instance.new("TextButton")
 button.Size = UDim2.new(0.5, 0, 0.2, 0)
 button.Position = UDim2.new(0.25, 0, 0.75, 0)
@@ -57,9 +57,7 @@ buttonStroke.Color = Color3.fromRGB(255, 255, 255)
 buttonStroke.Parent = button
 
 -- Nội dung Script cần Copy
-local scriptContent = [[
-Lồn
-]]
+local scriptContent = "https://pastefy.app/kKNDHuBV/raw" -- Thay link thật vào đây
 
 -- Xử lý khi nhấn nút
 button.MouseButton1Click:Connect(function()
