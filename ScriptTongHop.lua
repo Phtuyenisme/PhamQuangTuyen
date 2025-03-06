@@ -2728,13 +2728,15 @@ local PageTab = Tab:royxpage("⚡Script Farm⚡️")
 
 local PageTab2 = Tab2:royxpage("⚡Script Kaitun⚡️")
 
-local PageTab3 = Tab3:royxpage("⚡Auto Gạt cần⚡️")
+local PageTab3 = Tab3:royxpage("⚡Auto Pull Lever⚡️")
 
-local PageTab31 = Tab3:royxpage("⚡Auto tam kiếm Zoro⚡️")
+local PageTab31 = Tab3:royxpage("⚡Auto Sword⚡️")
 
 local PageTab32 = Tab3:royxpage("⚡Auto Chest⚡️")
 
 local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
+
+local PageTab41 = Tab4:royxpage("⚡Script FixLag⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
@@ -2856,8 +2858,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
 end)
 
 --3.1💗💗💗💗
-PageTab31:Button("AAAAAA",function()
-
+PageTab31:Button("Auto Sword",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword"))()
 end)
 
 --3.2💗💗💗💗
@@ -2871,4 +2873,43 @@ PageTab32:Button("Auto Chest [TpBypass,only one island]",function()
 } 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
+end)
+
+--4.1💗💗💗💗
+PageTab41:Button("FixLag-TurboLite",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end)
+
+PageTab41:Button("FixLag-AkGaming",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-FIXLAG"))()
+end)
+
+--4💗💗💗💗
+PageTab4:Button("Auto Aim [Dùng với HitBox để có Hiệu Quả tối hơn]",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
+end)
+
+PageTab4:Button("HitBox",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
+end)
+
+PageTab4:Button("Auto Bounty",function()
+royxui:NewNotification("Tự tìm Đi tao k cho đâu Hahaa", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+end)
+
+--5💗💗💗💗
+PageTab5:Button("Fake Ban",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy2511-coder/FakeBan/refs/heads/main/fakeban"))()
+end)
+
+PageTab5:Button("Troll Kick",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubTrollKick/refs/heads/main/VxezeHubTrollKick.txt"))()
+end)
+
+PageTab5:Button("Reset Fruit",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/Kaitun.txt"))()
+end)
+
+PageTab5:Button("Trade Scam",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lelel22f/test21/refs/heads/main/kk",true))()
 end)
