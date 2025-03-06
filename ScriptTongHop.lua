@@ -321,16 +321,16 @@ ToggleButton.MouseButton1Click:Connect(function()
 
     -- Đổi icon để hiển thị trạng thái
     if isVisible then
-        ToggleIcon.Image = "rbxassetid://6031068427" -- Con mắt mở
+        ToggleIcon.Image = "rbxassetid://140362506923219" -- Con mắt mở
     else
-        ToggleIcon.Image = "rbxassetid://6031068433" -- Con mắt đóng
+        ToggleIcon.Image = "rbxassetid://140362506923219" -- Con mắt đóng
     end
 end)
 
 function royxui:NewNotification(title, message, duration, logo)
     -- Nếu không có thời gian, mặc định là 3 giây
     duration = duration or 3  
-    logo = logo or "rbxassetid://6031097225" -- Mặc định là icon thông báo
+    logo = logo or "rbxassetid://140362506923219" -- Mặc định là icon thông báo
 
     -- Tạo khung thông báo
     local NotiFrame = Instance.new("Frame")
