@@ -2712,11 +2712,11 @@ end
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
-local scriptContent = "Facebook"
-local scriptContent1 = "Tiktok"
+local scriptContent = "https://www.facebook.com/ph.tuyenn0"
+local scriptContent1 = "https://www.tiktok.com/@.pham.tuyen?_t=ZS-8uSjcnuSuF6&_r=1"
 --⛅️Tab
 
-local Tab6 = Main:royxtab("⛄Main⛄️")
+local Tab6 = Main:royxtab("✨Main✨")
 
 local Tab = Main:royxtab("⛅Farm⛅️")
 
@@ -2742,7 +2742,7 @@ local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
 
 local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
-PageTab:Label("Phtuyenisme")
+PageTab6:Label("⛅Phtuyenisme")
 
 --⛅️Button,Function
 
