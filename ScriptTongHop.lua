@@ -2745,7 +2745,7 @@ PageTab:Label("Phtuyenisme999")
 --⛅️Button,Function
 
 --6💗💗💗💗
-PageTab6:Button("AAAAAA",function()
+PageTab6:Button("FaceBook:Quang Tuyên | Bấm để Sao Chép ",function()
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
