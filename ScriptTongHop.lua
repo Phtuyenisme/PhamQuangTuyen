@@ -306,7 +306,7 @@ ToggleCorner.CornerRadius = UDim.new(1, 0) -- Làm cho nút tròn hoàn toàn
 ToggleCorner.Parent = ToggleButton
 
 local uiVisible = true
-local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out) -- Hiệu ứng mượt 0.5s
+local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quart, Enum.EasingDirection.Out) -- Hiệu ứng mượt 0.5s
 
 ToggleButton.MouseButton1Click:Connect(function()
     uiVisible = not uiVisible
