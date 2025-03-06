@@ -50,12 +50,6 @@ local buttonCorner = Instance.new("UICorner")
 buttonCorner.CornerRadius = UDim.new(0.2, 0)
 buttonCorner.Parent = button
 
--- Viền cho Button
-local buttonStroke = Instance.new("UIStroke")
-buttonStroke.Thickness = 2
-buttonStroke.Color = Color3.fromRGB(255, 255, 255)
-buttonStroke.Parent = button
-
 -- Nội dung Script cần Copy
 local scriptContent = "https://pastefy.app/kKNDHuBV/raw" -- Thay link thật vào đây
 
