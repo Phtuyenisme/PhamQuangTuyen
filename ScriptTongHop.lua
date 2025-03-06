@@ -2712,6 +2712,8 @@ end
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
+local scriptContent = "https://pastefy.app/kKNDHuBV/raw"
+local scriptContent1 = "https://pastefy.app/kKNDHuBV/raw"
 --⛅️Tab
 
 local Tab6 = Main:royxtab("⛄Main⛄️")
