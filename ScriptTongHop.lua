@@ -2742,71 +2742,71 @@ PageTab:Button("Notification",function()
 	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("W-azure Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Redz Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Min Gaming",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Trẩu Roblox",function()
 
 end)
 
-PageTab:Button("W-azure123",function()
+PageTab:Button("Zis Roblox",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Mukuro Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Alchemy Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Raito Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Speed Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Teddy Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Xero Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("AstralV1 Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("QuanTum Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("Volcano Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("RubuTV Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("BlueX Hub",function()
 
 end)
 
-PageTab:Button("W-azure",function()
+PageTab:Button("FrostWare Hub",function()
 
 end)
 
