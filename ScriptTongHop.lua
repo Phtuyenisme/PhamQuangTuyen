@@ -2746,14 +2746,10 @@ PageTab:Label("Phtuyenisme999")
 
 --6💗💗💗💗
 PageTab6:Button("FaceBook:Quang Tuyên | Bấm Để Sao Chép!",function()
-Local FbUrl = "https://www.facebook.com/ten_fb_cua_ban"
-setclipboard(FbUrl)
 royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
 PageTab6:Button("TikTok:pham.tuyen | Bấm Để Sao Chép!",function()
-Local TTUrl = "Tiktok"
-setclipboard(TTUrl)
 royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 end)
 
