@@ -2713,18 +2713,26 @@ local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
 
 --⛅️Tab
-local Tab = Main:royxtab("Farm⛅️")
+local Tab = Main:royxtab("⛅Farm⛅️")
 
-local Tab2 = Main:royxtab("Kaitun⛅️")
+local Tab2 = Main:royxtab("⛈Kaitun⛈")
 
-local Tab3 = Main:royxtab("Auto🤖")
+local Tab3 = Main:royxtab("�Auto🤖")
 
-local Tab4 = Main:royxtab("PvP⚔️")
+local Tab4 = Main:royxtab("⚔PvP⚔️")
 
-local Tab5 = Main:royxtab("Troll⛄️")
+local Tab5 = Main:royxtab("⛄Troll⛄️")
 
 --⛅️Page
-local PageTab = Tab:royxpage("Auto Farm")
+local PageTab = Tab:royxpage("⚡Script Farm⚡️")
+
+local PageTab2 = Tab2:royxpage("⚡Script Kaitun⚡️")
+
+local PageTab3 = Tab3:royxpage("⚡Script Auto⚡️")
+
+local PageTab4 = Tab4:royxpage("⚡Script PvP⚡️")
+
+local PageTab5 = Tab5:royxpage("⚡Script Troll⚡️")
 
 PageTab:Label("Phtuyenisme")
 
