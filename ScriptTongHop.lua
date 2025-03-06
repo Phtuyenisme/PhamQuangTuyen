@@ -1,4 +1,4 @@
-local royxui
+local royxui = loadstring(game:HttpGet("https://raw.githubusercontent.com/Phtuyenisme/PhamQuangTuyen/refs/heads/main/message%202.lua"))()
 
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
 royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
