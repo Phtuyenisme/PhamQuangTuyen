@@ -2814,7 +2814,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/r
 end)
 
 PageTab:Button("FrostWare Hub",function()
-
+loadstring(game:HttpGet"https://frostware.onrender.com/fw")()
 end)
 
 PageTab:Button("VxezeV2 Hub",function()
