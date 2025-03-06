@@ -2717,7 +2717,7 @@ local Tab = Main:royxtab("⛅Farm⛅️")
 
 local Tab2 = Main:royxtab("⛈Kaitun⛈")
 
-local Tab3 = Main:royxtab("�Auto🤖")
+local Tab3 = Main:royxtab("🤖Auto🤖")
 
 local Tab4 = Main:royxtab("⚔PvP⚔️")
 
