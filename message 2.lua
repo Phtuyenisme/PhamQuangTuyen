@@ -1101,6 +1101,47 @@ local ScreenGui = Create("ScreenGui", CoreGui, {
 	})
 })
 
+local TweenService = game:GetService("TweenService")
+local Players = game:GetService("Players")
+local PlayerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Tìm UI chính
+local MainUI = PlayerGui:FindFirstChild("redz Library V5")
+if not MainUI then
+    warn("Không tìm thấy UI chính!")
+    return
+end
+
+-- Tạo nút toggle bằng ảnh
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = PlayerGui
+ToggleButton.AnchorPoint = Vector2.new(0, 0)
+ToggleButton.Position = UDim2.new(0, 10, 0, 10) -- Góc trên bên trái
+ToggleButton.Size = UDim2.new(0, 50, 0, 50) -- Kích thước nút
+ToggleButton.BackgroundTransparency = 1 -- Xóa nền
+ToggleButton.Image = "rbxassetid://140362506923219" -- Thay bằng ID ảnh của bạn
+ToggleButton.ScaleType = Enum.ScaleType.Fit -- Đảm bảo hình ảnh hiển thị đúng
+
+-- Bo góc làm tròn
+local ToggleCorner = Instance.new("UICorner")
+ToggleCorner.CornerRadius = UDim.new(1, 0)
+ToggleCorner.Parent = ToggleButton
+
+local uiVisible = true
+
+ToggleButton.MouseButton1Click:Connect(function()
+    uiVisible = not uiVisible
+
+    if uiVisible then
+        MainUI.Enabled = true -- Hiện UI
+        ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI hiện
+    else
+        MainUI.Enabled = false -- Ẩn UI
+        ToggleButton.Image = "rbxassetid://140362506923219" -- Ảnh khi UI ẩn
+    end
+end)
+
 local ScreenFind = CoreGui:FindFirstChild(ScreenGui.Name)
 if ScreenFind and ScreenFind ~= ScreenGui then
 	ScreenFind:Destroy()
