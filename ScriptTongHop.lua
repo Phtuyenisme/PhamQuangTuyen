@@ -323,7 +323,7 @@ end)
 function royxui:NewNotification(title, message, duration, logo)
     -- Nếu không có thời gian, mặc định là 3 giây
     duration = duration or 3  
-    logo = logo or "rbxassetid://140362506923219" -- Mặc định là icon thông báo
+    logo = logo or "rbxassetid://85869640895047" -- Mặc định là icon thông báo
 
     -- Tạo khung thông báo
     local NotiFrame = Instance.new("Frame")
