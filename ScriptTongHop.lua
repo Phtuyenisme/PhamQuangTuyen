@@ -2710,7 +2710,7 @@ end
 end
 
 local Main = royxui:royxstart("Tổng Hợp[V3] | Phtuyenisme⚡️")
-royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅Phtuyen", 1, "rbxassetid://85869640895047")
 
 local scriptContent = "https://www.facebook.com/ph.tuyenn0"
 local scriptContent1 = "https://www.tiktok.com/@.pham.tuyen?_t=ZS-8uSjcnuSuF6&_r=1"
@@ -2749,17 +2749,17 @@ PageTab6:Label("⛅Phtuyenisme")
 --6💗💗💗💗
 PageTab6:Button("FaceBook:Quang Tuyên | Bấm Để Sao Chép!",function()
 setclipboard(scriptContent)
-royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+royxui:NewNotification("Đã Sao Chép!", "⛅Phtuyen", 1, "rbxassetid://85869640895047")
 end)
 
 PageTab6:Button("TikTok:pham.tuyen | Bấm Để Sao Chép!",function()
 setclipboard(scriptContent1)
-royxui:NewNotification("Đã Sao Chép!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+royxui:NewNotification("Đã Sao Chép!", "⛅Phtuyen", 1, "rbxassetid://85869640895047")
 end)
 
 --1💗💗💗💗
 PageTab:Button("Notification",function()
-	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://112969263935543")
+	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://85869640895047")
 end)
 
 PageTab:Button("W-azure Hub",function()
