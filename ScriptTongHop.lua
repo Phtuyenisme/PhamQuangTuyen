@@ -2759,7 +2759,7 @@ end)
 
 --1💗💗💗💗
 PageTab:Button("Notification",function()
-	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅TuongVyy", 1, "rbxassetid://85869640895047")
+	royxui:NewNotification("Đã Chạy Script Thành Công!", "⛅Phtuyen", 1, "rbxassetid://85869640895047")
 end)
 
 PageTab:Button("W-azure Hub",function()
